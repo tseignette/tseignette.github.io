@@ -1,0 +1,44 @@
+@import 'variables';
+
+:host {
+  footer {
+    $clipSize: 5.0rem;
+
+    padding-top: $clipSize;
+    background-color: $black;
+    clip-path: polygon(0 $clipSize, 100% 0, 100% 100%, 0% 100%);
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: $gutterXXXL 0;
+
+        & > div {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          margin: -$gutterL / 2;
+
+          &:not(:last-child) {
+            margin-bottom: $gutterL;
+          }
+
+          & > * {
+            margin: $gutterL / 2;
+          }
+        }
+      }
+
+      .copyright {
+        margin-bottom: $gutterXXL;
+        color: $white
+      }
+    }
+  }
+}

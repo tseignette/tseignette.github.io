@@ -1,0 +1,10 @@
+<header>
+  <div class="container">
+    <a routerLink="/">{{ me.me }}</a>
+
+    <div class="right-side">
+      <app-button (onClick)="openContact()">Me contacter</app-button>
+      <app-toggle-switch [form]="langForm" left="FR" right="EN"></app-toggle-switch>
+    </div>
+  </div>
+</header>
