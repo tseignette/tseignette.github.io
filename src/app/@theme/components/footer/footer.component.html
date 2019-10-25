@@ -1,16 +1,9 @@
 <footer>
   <div class="container">
     <div class="contact">
-      <div>
-        <app-button light iconOnly icon="fab fa-linkedin" [href]="me.linkedin" target="_blank"></app-button>
-        <app-button light icon="fas fa-mail-bulk" [href]="'mailto:' + me.email">{{ me.email }}</app-button>
-      </div>
-      <div>
-        <app-button light iconOnly icon="fab fa-github" [href]="me.github" target="_blank"></app-button>
-        <app-button light icon="fas fa-file-pdf" [href]="'/assets/' + me.CV" target="_blank">Télécharger mon CV</app-button>
-      </div>
+      <app-card-contact light></app-card-contact>
     </div>
 
-    <div class="copyright">2019 <i class="fas fa-copyright"></i> {{me.me}}</div>
+    <div class="copyright">2019 <i class="fas fa-copyright"></i> {{ me.me }}</div>
   </div>
 </footer>

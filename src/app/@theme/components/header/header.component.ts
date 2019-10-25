@@ -12,6 +12,8 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
   private langFormSub: Subscription;
 
+  contactDialogOpen = false;
+
   langForm = new FormControl();
 
   me = Me;
@@ -31,7 +33,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   }
 
   openContact() {
-    console.log('TODO: open contact page');
+    this.contactDialogOpen = true;
   }
 
 }

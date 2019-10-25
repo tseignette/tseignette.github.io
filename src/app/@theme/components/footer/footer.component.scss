@@ -12,27 +12,9 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-
+      
       .contact {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         margin: $gutterXXXL 0;
-
-        & > div {
-          display: flex;
-          justify-content: center;
-          flex-wrap: wrap;
-          margin: -$gutterL / 2;
-
-          &:not(:last-child) {
-            margin-bottom: $gutterL;
-          }
-
-          & > * {
-            margin: $gutterL / 2;
-          }
-        }
       }
 
       .copyright {
