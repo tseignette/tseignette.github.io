@@ -15,14 +15,19 @@ $grid-gutter-width: 15px;
 @import "node_modules/bootstrap/scss/bootstrap-grid";
 
 // Bootstrap custom extensions
+.w-100 {
+  width: 100%;
+}
+
 .row-full-spaced {
   display: flex;
+  flex-direction: column;
 
   .row {
     margin-top: -$grid-gutter-width / 2;
     margin-bottom: -$grid-gutter-width / 2;
 
-    & > div {
+    & > div:not(.w-100) {
       padding-top: $grid-gutter-width / 2;
       padding-bottom: $grid-gutter-width / 2;
     }

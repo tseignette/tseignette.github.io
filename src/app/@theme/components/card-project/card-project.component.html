@@ -1,0 +1,15 @@
+<img [src]="'assets/' + project.preview" [alt]="project.company">
+
+<div class="overlay">
+  <app-button
+    light
+    type="link"
+    icon="fas fa-external-link-alt"
+    [href]="project.companyWebsite"
+    target="_blank"
+  >
+    {{ project.company }}
+  </app-button>
+  <p>{{ project.description }}</p>
+  <app-button light [href]="project.website" target="_blank">Voir plus</app-button>
+</div>

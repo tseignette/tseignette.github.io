@@ -8,6 +8,8 @@ const linkedin = 'https://www.linkedin.com/in/thomas-seignette';
 
 const me = 'Thomas Seignette';
 
+const picture = 'PICTURE_SEIGNETTE_THOMAS.png';
+
 export class Me {
 
   static get CV() {
@@ -28,6 +30,10 @@ export class Me {
 
   static get me() {
     return me;
+  }
+
+  static get picture() {
+    return picture;
   }
 
 }

@@ -1,6 +1,6 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NotFoundComponent, ButtonComponent, ToggleSwitchComponent, HeaderComponent, FooterComponent, DialogComponent, CardContactComponent } from './components';
+import { NotFoundComponent, ButtonComponent, ToggleSwitchComponent, HeaderComponent, FooterComponent, DialogComponent, CardContactComponent, CardProjectComponent } from './components';
 import { NgForObjectPipe } from './pipes';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 const COMPONENTS = [
   ButtonComponent,
   CardContactComponent,
+  CardProjectComponent,
   DialogComponent,
   FooterComponent,
   HeaderComponent,

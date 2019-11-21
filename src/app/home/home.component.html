@@ -1,105 +1,74 @@
-<div class="container">
-  <h1 class="title">Angular boilerplate</h1>
-
-  <!-- =========================================================================================== -->
-  <!-- LIBRARIES INCLUDED -->
-  <!-- =========================================================================================== -->
-  <h2>Libraries included</h2>
-  
-  <p><strong>Font Awesome</strong> free icons and <strong>Bootstrap</strong> (grid system only with custom gutters, see <em>bootstrap-custom.scss</em>) are ready-to-use!</p>
-
-  <!-- ========================================================================================= -->
-  <!-- STYLES -->
-  <!-- ========================================================================================= -->
-  <h2>Styles</h2>
-
-  <p>Styles definition is separated in 2 files :</p>
-  <ul>
-    <li><strong>styles.scss</strong> contains global styles</li>
-    <li><strong>variables.scss</strong> contains variables accessible everywhere in order to maintain a coherent style in the app</li>
-  </ul>
-
-  <!-- ========================================================================================= -->
-  <!-- FEATURES -->
-  <!-- ========================================================================================= -->
-  <h2>Features</h2>
-
-  <ul>
-    <li><strong>NotFoundComponent:</strong> nonexistent routes are redirected to this component</li>
-    <li><strong>ngForObjectPipe:</strong> allows to use objects in <em>ngFor</em> the same way as arrays</li>
-  </ul>
-
-  <!-- =========================================================================================== -->
-  <!-- UI FEATURES -->
-  <!-- =========================================================================================== -->
-  <h2>UI features</h2>
-  
-  <ng-container *ngFor="let type of [ 'normal', 'link' ]">
-    <h3>{{ type === 'normal' ? 'Buttons' : 'Links' }}</h3>
-
-    <div class="row-full-spaced">
-      <div class="row">
-        <div class="col-auto">
-          <app-button [type]="type">Normal</app-button>
-        </div>
-        <div class="col-auto">
-          <app-button [type]="type" icon="fab fa-angular">Normal</app-button>
-        </div>
-        <div class="col-auto">
-          <app-button *ngIf="type !== 'link'" iconOnly icon="fab fa-angular"></app-button>
-        </div>
+<section class="intro">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8">
+        <h1>Ingénieur en informatique / Développeur web front-end</h1>
       </div>
     </div>
-  
-    <div class="row-full-spaced">
-      <div class="row">
-        <div class="col-auto">
-          <app-button [type]="type" (onClick)="ouch()">Button</app-button>
-        </div>
-        <div class="col-auto">
-          <app-button [type]="type" link="nowhere">RouterLink</app-button>
-        </div>
-        <div class="col-auto">
-          <app-button [type]="type" href="https://github.com/tseignette">Link</app-button>
-        </div>
-        <div class="col-auto">
-          <app-button [type]="type" href="https://github.com/tseignette" target="_blank">Link in new tab</app-button>
-        </div>
-        <div class="col-auto">
-          <app-button *ngIf="type !== 'link'" iconOnly icon="fab fa-angular" link="nowhere"></app-button>
-        </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8">
+        <p>Bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla</p>
       </div>
     </div>
-  
-    <div class="row-full-spaced dark">
-      <div class="row">
-        <div class="col-auto">
-          <app-button [type]="type" light>Light</app-button>
-        </div>
-        <div class="col-auto">
-          <app-button [type]="type" light icon="fab fa-angular">Light</app-button>
-        </div>
-        <div class="col-auto">
-          <app-button *ngIf="type !== 'link'" light iconOnly icon="fab fa-angular"></app-button>
-        </div>
-      </div>
-    </div>
-  </ng-container>
-  
-  <h3>Toggle switch</h3>
-  
-  <div class="row-full-spaced">
-    <div class="row">
+
+    <div class="row justify-content-center">
       <div class="col-auto">
-        <app-toggle-switch [form]="toggleSwitchForm" left="FR" right="EN"></app-toggle-switch>
+        <img [src]="'/assets/' + me.picture" alt="Photo de profil">
       </div>
     </div>
   </div>
+</section>
 
-  <!-- ========================================================================================= -->
-  <!-- CONTRIBUTING -->
-  <!-- ========================================================================================= -->
-  <h2>Contributing</h2>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path d="M0,256L40,256C80,256,160,256,240,224C320,192,400,128,480,138.7C560,149,640,235,720,245.3C800,256,880,192,960,176C1040,160,1120,192,1200,202.7C1280,213,1360,203,1400,197.3L1440,192L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+</svg>
 
-  <p>This project structure is inspired from <app-button type="link" href="https://github.com/akveo/ngx-admin" target="_blank">ngx-admin</app-button>, if you see it can be improved, do not hesitate to contribute!</p>
-</div>
+<section class="about">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8">
+        <h2>À propos de moi</h2>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8">
+        <p>Bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla</p>
+        <p>Bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <app-button light link="about">En savoir plus</app-button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path d="M0,128L40,128C80,128,160,128,240,144C320,160,400,192,480,186.7C560,181,640,139,720,128C800,117,880,139,960,144C1040,149,1120,139,1200,112C1280,85,1360,43,1400,21.3L1440,0L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+</svg>
+
+<section class="projects">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8">
+        <h2>Quelques projets</h2>
+      </div>
+    </div>
+
+    <div class="row-full-spaced">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6 col-xl-4" *ngFor="let project of projects | slice:0:2">
+          <app-card-project [project]="project"></app-card-project>
+        </div>
+        <div class="w-100"></div>
+        <div class="col-auto">
+          <app-button type="link" icon="fas fa-plus" link="projects">Voir plus</app-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

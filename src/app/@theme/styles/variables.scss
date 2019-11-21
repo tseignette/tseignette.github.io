@@ -1,8 +1,9 @@
 /* You can add SCSS variables to this file and import it in any .scss file with:  */
 /* @import 'variables'; */
 
-$primaryColor: #226F54;
+$primaryColorXS: #E5EEEB;
 $primaryColorS: #72A392;
+$primaryColor: #226F54;
 $black: #172C33;
 $white: #FFFFFF;
 $grayS: #F5F7FA;
@@ -19,13 +20,21 @@ $gutterXXL: 5.0rem;
 $gutterXXXL: 8.0rem;
 $gutterXXXXL: 10.0rem;
 
+$text: 1.4rem;
+$textXL: 2.2rem;
+
+$titleL: 3.2rem;
+$titleXL: 4.2rem;
+
 $zindexDialog: 10;
 
 $radius: 0.4rem;
 
 $transition: all 0.2s ease;
+$transitionL: all 0.4s ease;
 
 $shadow: 0 0.2rem 1.0rem rgba(0, 0, 0, 0.2);
+$shadowL: 0 2.0rem 3.0rem rgba(0, 0, 0, 0.2);
 
 %reset-button-styles {
   padding: 0;
