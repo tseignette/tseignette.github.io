@@ -2,26 +2,20 @@
 
 :host {
   header {
-    padding-top: $gutterXXXXL;
-
+    
     .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
+      padding-top: $gutterL;
       padding-bottom: $gutterL;
       border-bottom: 0.1rem solid $gray;
 
       a {
         @extend %reset-button-styles;
 
-        font-size: 2.2rem;
+        font-size: $textXL;
         font-weight: $bold;
       }
 
-      .right-side {
-        display: flex;
-        align-items: center;
-
+      .links {
         & > *:not(:last-child) {
           margin-right: $gutterL;
         }

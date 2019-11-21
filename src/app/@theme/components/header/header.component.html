@@ -4,11 +4,25 @@
 
 <header>
   <div class="container">
-    <a routerLink="/">{{ me.me }}</a>
+    <div class="row-full-spaced">
+      <div class="row">
+        <div class="col-12 col-sm align-self-end text-center text-sm-left">
+          <a routerLink="/">{{ me.me }}</a>
+        </div>
 
-    <div class="right-side">
-      <app-button (onClick)="openContact()">Me contacter</app-button>
-      <app-toggle-switch [form]="langForm" left="FR" right="EN"></app-toggle-switch>
+        <div class="col col-sm-auto align-self-center links">
+            <app-button dark type="link" link="about">À propos</app-button>
+            <app-button dark type="link" link="projects">Projets</app-button>
+            <!--
+              translation is not ready yet
+              <app-toggle-switch [form]="langForm" left="FR" right="EN"></app-toggle-switch>
+            -->
+        </div>
+
+        <div class="col-auto">
+          <app-button (onClick)="openContact()">Me contacter</app-button>
+        </div>
+      </div>
     </div>
   </div>
 </header>

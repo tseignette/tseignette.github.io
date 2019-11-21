@@ -83,6 +83,10 @@ $size: 4.0rem;
         }
       }
 
+      &.dark {
+        color: $black;
+      }
+
       &.light {
         color: $white;
       }

@@ -8,7 +8,7 @@ import { Component, OnChanges, Input, Output, EventEmitter, OnInit } from '@angu
  * 
  * and 2 types:
  *  - button (icon, iconOnly, light)
- *  - link (icon, light)
+ *  - link (icon, light, dark)
  */
 @Component({
   selector: 'app-button',
@@ -16,6 +16,11 @@ import { Component, OnChanges, Input, Output, EventEmitter, OnInit } from '@angu
   styleUrls: ['./button.component.scss']
 })
 export class ButtonComponent implements OnChanges, OnInit {
+
+  /**
+   * Darker style
+   */
+  @Input() dark: boolean | '' = false;
 
   /**
    * Button link
@@ -33,7 +38,7 @@ export class ButtonComponent implements OnChanges, OnInit {
   @Input() iconOnly = false;
 
   /**
-   * Adapt button style if background is dark
+   * Lighter style (useful when background is dark)
    */
   @Input() light: boolean | '' = false;
 
@@ -70,7 +75,9 @@ export class ButtonComponent implements OnChanges, OnInit {
   }
 
   computeClasses() {
-    this.CSSClasses = { light: (this.light === true) || (this.light === '') };
+    this.CSSClasses = {};
+    this.CSSClasses.light = (this.light === true) || (this.light === '');
+    this.CSSClasses.dark = (this.dark === true) || (this.dark === '');
     this.CSSClasses[this.type] = true;
 
     if (this.type === 'normal') {
