@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Subscription } from 'rxjs';
-import { Me } from '../../../@core/models';
+import { INFORMATION } from '../../../INFORMATION';
 
 @Component({
   selector: 'app-header',
@@ -14,9 +14,9 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
   contactDialogOpen = false;
 
-  langForm = new FormControl();
+  info = INFORMATION;
 
-  me = Me;
+  langForm = new FormControl();
 
   constructor() { }
 

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Me } from '../../../@core/models';
+import { INFORMATION } from '../../../INFORMATION';
 
 @Component({
   selector: 'app-card-contact',
@@ -10,7 +10,7 @@ export class CardContactComponent {
 
   @Input() light: boolean;
 
-  me = Me;
+  info = INFORMATION;
 
   constructor() { }
 

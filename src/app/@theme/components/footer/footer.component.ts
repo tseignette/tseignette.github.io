@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Me } from '../../../@core/models';
+import { INFORMATION } from '../../../INFORMATION';
 
 @Component({
   selector: 'app-footer',
@@ -8,7 +8,7 @@ import { Me } from '../../../@core/models';
 })
 export class FooterComponent {
 
-  me = Me;
+  info = INFORMATION;
 
   constructor() { }
 

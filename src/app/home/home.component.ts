@@ -1,8 +1,8 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Subscription } from 'rxjs';
-import { Me } from '../@core/models';
-import { PROJECTS } from './projects';
+import { INFORMATION } from '../INFORMATION';
+import { PROJECTS } from '../PROJECTS';
 
 @Component({
   selector: 'app-home',
@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   private toggleSwitchFormSub: Subscription;
 
-  me = Me;
+  info = INFORMATION;
 
   projects = PROJECTS;
 

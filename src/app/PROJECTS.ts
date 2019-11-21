@@ -1,4 +1,4 @@
-import { Project } from '../@core/models';
+import { Project } from './@core/models';
 
 export const PROJECTS = [
   new Project(

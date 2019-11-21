@@ -1,12 +1,12 @@
 <div class="wrapper">
   <div>
-    <app-button [light]="light" iconOnly icon="fab fa-linkedin" [href]="me.linkedin" target="_blank"></app-button>
-    <app-button [light]="light" icon="fas fa-mail-bulk" [href]="'mailto:' + me.email">{{ me.email }}</app-button>
+    <app-button [light]="light" iconOnly icon="fab fa-linkedin" [href]="info.linkedin" target="_blank"></app-button>
+    <app-button [light]="light" icon="fas fa-mail-bulk" [href]="'mailto:' + info.email">{{ info.email }}</app-button>
   </div>
 </div>
 <div class="wrapper">
   <div>
-    <app-button [light]="light" iconOnly icon="fab fa-github" [href]="me.github" target="_blank"></app-button>
-    <app-button [light]="light" icon="fas fa-file-pdf" [href]="'/assets/' + me.CV" target="_blank">Télécharger mon CV</app-button>
+    <app-button [light]="light" iconOnly icon="fab fa-github" [href]="info.github" target="_blank"></app-button>
+    <app-button [light]="light" icon="fas fa-file-pdf" [href]="'/assets/' + info.CV" target="_blank">Télécharger mon CV</app-button>
   </div>
 </div>
