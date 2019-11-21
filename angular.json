@@ -30,7 +30,10 @@
             "styles": [
               "src/app/@theme/styles/styles.scss",
               "src/app/@theme/styles/bootstrap-custom.scss",
-              "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "node_modules/@fortawesome/fontawesome-free/sprites/brands.svg",
+              "node_modules/@fortawesome/fontawesome-free/sprites/regular.svg",
+              "node_modules/@fortawesome/fontawesome-free/sprites/solid.svg"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
@@ -97,7 +100,10 @@
             "styles": [
               "src/app/@theme/styles/styles.scss",
               "src/app/@theme/styles/bootstrap-custom.scss",
-              "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "node_modules/@fortawesome/fontawesome-free/sprites/brands.svg",
+              "node_modules/@fortawesome/fontawesome-free/sprites/regular.svg",
+              "node_modules/@fortawesome/fontawesome-free/sprites/solid.svg"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [

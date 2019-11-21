@@ -1,0 +1,30 @@
+@import 'variables';
+
+:host {
+  height: 100%;
+
+  .row {
+    position: relative;
+    margin-top: $gutterXL;
+    margin-bottom: $gutterXL;
+    padding-top: $gutterXXXXL;
+    padding-bottom: $gutterXXXXL;
+    overflow: hidden;
+
+    svg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      width: 80%;
+      height: 100%;
+      fill: $primaryColorXS;
+      fill-opacity: 1;
+      transform: rotate(10deg);
+    }
+
+    h1 {
+      margin: 0 0 $gutterXXL 0;
+    }
+  }
+}
