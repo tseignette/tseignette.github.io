@@ -38,6 +38,10 @@
 
       p {
         font-size: $textXL;
+
+        &:not(:last-child) {
+          margin-bottom: $gutterL;
+        }
       }
 
       img {
