@@ -3,23 +3,16 @@ import { Project } from './@core/models';
 export const PROJECTS = [
   new Project(
     'placeloop.png',
-    'Bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla',
+    'Intégration de la nouvelle identité de l\'application à partir de maquettes réalisées par un studio d\'UI/UX.',
     'https://ui-components.placeloop.com/',
     'Placeloop',
     'https://placeloop.com/'
   ),
   new Project(
     'freetaps.png',
-    'Bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla',
+    'Conception, développement et déploiement de la dernière version de l\'API.',
     'https://api.freetaps.earth/',
     'Association Eaupen',
-    'https://freetaps.earth/'
-  ),
-  new Project(
-    'freetaps.png',
-    'Bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla, bla blabla bla',
-    'https://api.freetaps.earth/',
-    'Other project',
     'https://freetaps.earth/'
   ),
 ];

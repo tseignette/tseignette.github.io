@@ -1,8 +1,8 @@
 export const INFORMATION = {
 
-  CV: 'CV_SEIGNETTE_THOMAS.pdf',
+  CV: '',
 
-  email: 'coming@soon.name',
+  email: 'tseignette@pm.me',
   
   github: 'https://www.github.com/tseignette',
   
@@ -12,6 +12,6 @@ export const INFORMATION = {
 
   name: 'Thomas Seignette',
   
-  picture: 'PICTURE_SEIGNETTE_THOMAS.png',
+  picture: 'PICTURE_SEIGNETTE_THOMAS.jpg',
 
 };
