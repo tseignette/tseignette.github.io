@@ -1,12 +1,13 @@
 <div class="wrapper">
-  <div>
-    <app-button [light]="light" iconOnly icon="fab fa-linkedin" [href]="info.linkedin" target="_blank"></app-button>
-    <app-button [light]="light" icon="fas fa-mail-bulk" [href]="'mailto:' + info.email">{{ info.email }}</app-button>
-  </div>
+  <app-button [light]="light" iconOnly icon="fab fa-linkedin" [href]="info.linkedin" target="_blank"></app-button>
+  <app-button [light]="light" iconOnly icon="fab fa-github" [href]="info.github" target="_blank"></app-button>
 </div>
 <div class="wrapper">
-  <div>
-    <app-button [light]="light" iconOnly icon="fab fa-github" [href]="info.github" target="_blank"></app-button>
-    <app-button [light]="light" icon="fas fa-file-pdf" [href]="'/assets/' + info.CV" target="_blank">Télécharger mon CV</app-button>
-  </div>
+  <app-button fullWidth [light]="light" icon="fas fa-briefcase" [href]="info.malt" target="_blank">Retrouvez moi sur Malt</app-button>
+</div>
+<div class="wrapper">
+  <app-button fullWidth [light]="light" icon="fas fa-mail-bulk" [href]="'mailto:' + info.email">{{ info.email }}</app-button>
+</div>
+<div class="wrapper">
+  <app-button fullWidth [light]="light" icon="fas fa-file-pdf" [href]="'/assets/' + info.CV" target="_blank">Télécharger mon CV</app-button>
 </div>

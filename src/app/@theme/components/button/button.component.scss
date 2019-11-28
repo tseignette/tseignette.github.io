@@ -5,14 +5,18 @@ $size: 4.0rem;
 :host {
   display: inline-block;
 
-  a {
-    display: inline-flex;
-    align-items: center;
+  &.full-width {
+    &, button, a {
+      width: 100%;
+    }
   }
 
   button, a {
     @extend %reset-button-styles;
 
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     transition: $transition;
 

@@ -8,6 +8,8 @@ export const INFORMATION = {
   
   linkedin: 'https://www.linkedin.com/in/thomas-seignette',
   
+  malt: 'https://www.malt.fr/profile/thomasseignette',
+
   name: 'Thomas Seignette',
   
   picture: 'PICTURE_SEIGNETTE_THOMAS.png',

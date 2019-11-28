@@ -7,13 +7,16 @@ import { Component, OnChanges, Input, Output, EventEmitter, OnInit } from '@angu
  *  - as an external link (href, target, onClick)
  * 
  * and 2 types:
- *  - button (icon, iconOnly, light)
- *  - link (icon, light, dark)
+ *  - button (icon, iconOnly, fullWidth, light)
+ *  - link (icon, fullWidth, light, dark)
  */
 @Component({
   selector: 'app-button',
   templateUrl: './button.component.html',
-  styleUrls: ['./button.component.scss']
+  styleUrls: ['./button.component.scss'],
+  host: {
+    "[class.full-width]": "( (this.fullWidth === true) || (this.fullWidth === '') )",
+  },
 })
 export class ButtonComponent implements OnChanges, OnInit {
 
@@ -21,6 +24,11 @@ export class ButtonComponent implements OnChanges, OnInit {
    * Darker style
    */
   @Input() dark: boolean | '' = false;
+
+  /**
+   * Make it take all the width
+   */
+  @Input() fullWidth: boolean | '' = false;
 
   /**
    * Button link
@@ -76,8 +84,8 @@ export class ButtonComponent implements OnChanges, OnInit {
 
   computeClasses() {
     this.CSSClasses = {};
-    this.CSSClasses.light = (this.light === true) || (this.light === '');
     this.CSSClasses.dark = (this.dark === true) || (this.dark === '');
+    this.CSSClasses.light = (this.light === true) || (this.light === '');
     this.CSSClasses[this.type] = true;
 
     if (this.type === 'normal') {
