@@ -12,7 +12,7 @@ import { ThemeModule } from './@theme/theme.module';
   ],
   imports: [
     AppRoutingModule,
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'portfolio' }),
 
     CoreModule.forRoot(),
     ThemeModule.forRoot(),
