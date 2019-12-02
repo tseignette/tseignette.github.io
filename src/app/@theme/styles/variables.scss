@@ -30,8 +30,10 @@ $zindexDialog: 10;
 
 $radius: 0.4rem;
 
-$transition: all 0.2s ease;
-$transitionL: all 0.4s ease;
+$transitionDuration: 0.2s;
+$transitionDurationL: 0.4s;
+$transition: all $transitionDuration ease;
+$transitionL: all $transitionDurationL ease;
 
 $shadow: 0 0.2rem 1.0rem rgba(0, 0, 0, 0.2);
 $shadowL: 0 2.0rem 3.0rem rgba(0, 0, 0, 0.2);
