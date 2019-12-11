@@ -3,6 +3,7 @@ import { Title } from '@angular/platform-browser';
 import { INFORMATION } from './INFORMATION';
 import { RouterOutlet } from '@angular/router';
 import { trigger, transition, query, style, animate } from '@angular/animations';
+import { InsightsService } from './@core/services';
 
 export const fader =
   trigger('routeAnimations', [
@@ -33,10 +34,12 @@ export class AppComponent implements OnInit {
   private animationAreEnabled = false;
 
   constructor(
+    private insightsService: InsightsService,
     private titleService: Title,
   ) { }
 
   ngOnInit() {
+    this.insightsService.init();
     this.titleService.setTitle(this.titleService.getTitle() + ' ' + INFORMATION.name);
   }
 

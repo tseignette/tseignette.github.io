@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Subscription } from 'rxjs';
 import { INFORMATION } from '../../../INFORMATION';
+import { InsightsService } from '../../../@core/services';
 
 @Component({
   selector: 'app-header',
@@ -18,7 +19,9 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
   langForm = new FormControl();
 
-  constructor() { }
+  constructor(
+    private insightsService: InsightsService,
+  ) { }
 
   ngOnInit() {
     this.langFormSub = this.langForm.valueChanges.subscribe(() => {
@@ -34,6 +37,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
   openContact() {
     this.contactDialogOpen = true;
+    this.insightsService.trackEvent('header-open-contact');
   }
 
 }

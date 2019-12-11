@@ -7,10 +7,11 @@
     icon="fas fa-external-link-alt"
     [href]="project.companyWebsite"
     target="_blank"
+    (onClick)="track('company-website')"
   >
     {{ project.company }}
   </app-button>
   <p>{{ project.description }}</p>
   <p class="languages">{{ project.languages | ngCommaSeparate }}</p>
-  <app-button light [href]="project.website" target="_blank">Voir plus</app-button>
+  <app-button light [href]="project.website" target="_blank" (onClick)="track('project-website')">Voir plus</app-button>
 </div>

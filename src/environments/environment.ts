@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
+  insightsID: 'KXaoY98nhjrxpYzy'
 };
 
 /*

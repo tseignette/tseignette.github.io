@@ -2,6 +2,7 @@ import { Project } from './@core/models';
 
 export const PROJECTS = [
   new Project(
+    'placeloop-ui-kit',
     'placeloop.png',
     'Intégration de la nouvelle identité de l\'application à partir de maquettes réalisées par un studio de design',
     [ 'AngularJS', 'HTML', 'SASS' ],
@@ -10,6 +11,7 @@ export const PROJECTS = [
     'https://placeloop.com/'
   ),
   new Project(
+    'freetaps-api',
     'freetaps.png',
     'Conception, développement et déploiement de la dernière version de l\'API',
     [ 'Node.js', 'PostgreSQL' ],
