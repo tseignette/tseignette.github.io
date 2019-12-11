@@ -11,5 +11,6 @@
     {{ project.company }}
   </app-button>
   <p>{{ project.description }}</p>
+  <p class="languages">{{ project.languages | ngCommaSeparate }}</p>
   <app-button light [href]="project.website" target="_blank">Voir plus</app-button>
 </div>

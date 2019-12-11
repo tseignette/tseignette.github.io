@@ -1,7 +1,7 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NotFoundComponent, ButtonComponent, ToggleSwitchComponent, HeaderComponent, FooterComponent, DialogComponent, CardContactComponent, CardProjectComponent, LayoutSvgBackgroundComponent, WorkInProgressComponent } from './components';
-import { NgForObjectPipe } from './pipes';
+import { NgForObjectPipe, CommaSeparatePipe } from './pipes';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
@@ -23,6 +23,7 @@ const DIRECTIVES = [
 ];
 
 const PIPES = [
+  CommaSeparatePipe,
   NgForObjectPipe,
 ];
 

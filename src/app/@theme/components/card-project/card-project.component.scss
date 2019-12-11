@@ -37,9 +37,18 @@
     background-color: rgba($black, 0.9);
 
     p {
-      margin: $gutterL $gutterXXL;
+      margin: 0 $gutterXXL;
       color: $white;
       text-align: center;
+
+      &.languages {
+        font-weight: $bold;
+        font-style: italic;
+      }
+    }
+
+    & > *:not(:last-child) {
+      margin-bottom: $gutter;
     }
   }
 
