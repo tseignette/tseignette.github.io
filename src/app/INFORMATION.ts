@@ -1,6 +1,6 @@
 export const INFORMATION = {
 
-  CV: '',
+  resume: 'CV_THOMAS_SEIGNETTE.pdf',
 
   email: 'tseignette@pm.me',
   

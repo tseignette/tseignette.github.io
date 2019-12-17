@@ -40,7 +40,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.insightsService.init();
-    this.titleService.setTitle(this.titleService.getTitle() + ' ' + INFORMATION.name);
+    this.titleService.setTitle('Portfolio / ' + INFORMATION.name);
   }
 
   /**

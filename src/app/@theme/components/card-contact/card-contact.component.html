@@ -8,6 +8,6 @@
 <div class="wrapper">
   <app-button (onClick)="track('email')" fullWidth [light]="light" icon="fas fa-mail-bulk" [href]="'mailto:' + info.email">{{ info.email }}</app-button>
 </div>
-<div class="wrapper" *ngIf="info.CV">
-  <app-button (onClick)="track('cv')" fullWidth [light]="light" icon="fas fa-file-pdf" [href]="'/assets/' + info.CV" target="_blank">Télécharger mon CV</app-button>
+<div class="wrapper" *ngIf="info.resume">
+  <app-button (onClick)="track('resume')" fullWidth [light]="light" icon="fas fa-file-pdf" [href]="'/assets/' + info.resume" target="_blank">Télécharger mon CV</app-button>
 </div>
