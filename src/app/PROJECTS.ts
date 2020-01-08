@@ -2,6 +2,15 @@ import { Project } from './@core/models';
 
 export const PROJECTS = [
   new Project(
+    'atelier-c',
+    'atelierc.png',
+    'Création d\'un site vitrine',
+    [ 'Wordpress' ],
+    'https://atelier-c.fr',
+    'Atelier Cécile de Latour',
+    'https://atelier-c.fr'
+  ),
+  new Project(
     'placeloop-ui-kit',
     'placeloop.png',
     'Intégration de la nouvelle identité de l\'application à partir de maquettes réalisées par un studio de design',
