@@ -35,8 +35,8 @@ $wrapperBackground: rgba($color: $black, $alpha: 0.6);
     .dialog {
       display: flex;
       flex-direction: column;
-      padding: $gutterL;
-      max-height: calc(100vh - 2*#{$gutterL});
+      padding: $gutter;
+      max-height: calc(100vh - 2*#{$gutter});
       overflow: auto;
       border-radius: $radius;
       background-color: $grayS;
@@ -48,7 +48,7 @@ $wrapperBackground: rgba($color: $black, $alpha: 0.6);
       }
 
       .content {
-        margin: $gutterL 0;
+        margin: $gutter 0;
       }
 
       .close-button {

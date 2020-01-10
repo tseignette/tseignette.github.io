@@ -1,6 +1,6 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NotFoundComponent, ButtonComponent, ToggleSwitchComponent, HeaderComponent, FooterComponent, DialogComponent, CardContactComponent, CardProjectComponent, LayoutSvgBackgroundComponent, WorkInProgressComponent } from './components';
+import { ButtonComponent, ToggleSwitchComponent, HeaderComponent, FooterComponent, DialogComponent, CardContactComponent, CardProjectComponent, LayoutSvgBackgroundComponent, WorkInProgressComponent, ProjectsListComponent } from './components';
 import { NgForObjectPipe, CommaSeparatePipe } from './pipes';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
@@ -13,7 +13,7 @@ const COMPONENTS = [
   FooterComponent,
   HeaderComponent,
   LayoutSvgBackgroundComponent,
-  NotFoundComponent,
+  ProjectsListComponent,
   ToggleSwitchComponent,
   WorkInProgressComponent,
 ];
@@ -54,9 +54,6 @@ const IMPORTS = [
   ]
 })
 export class ThemeModule {
-
-  constructor() { }
-
   static forRoot(): ModuleWithProviders {
     return <ModuleWithProviders>{
       ngModule: ThemeModule,

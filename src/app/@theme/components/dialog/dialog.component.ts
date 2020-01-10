@@ -15,7 +15,7 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 })
 export class DialogComponent implements ControlValueAccessor {
 
-  @Input() title: string;
+  @Input() myTitle: string;
 
   private onChange: any = () => { };
 

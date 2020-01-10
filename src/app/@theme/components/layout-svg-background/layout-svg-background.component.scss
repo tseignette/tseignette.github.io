@@ -1,29 +1,27 @@
 @import 'variables';
 
 :host {
-  height: 100%;
-
   .row {
+    $svgHeight: 30.0rem;
+
     position: relative;
-    margin-top: $gutterXL;
-    margin-bottom: $gutterXL;
-    padding-top: $gutterXXXXL;
-    padding-bottom: $gutterXXXXL;
-    overflow: hidden;
+    min-height: $svgHeight;
 
     svg {
       position: absolute;
       top: 0;
       right: 0;
+      z-index: -1;
       display: block;
-      width: 75%;
-      height: 100%;
+      width: 60%;
+      height: $svgHeight;
       fill: $primaryColorXS;
       fill-opacity: 1;
     }
 
-    h1 {
-      margin: 0 0 $gutterXXL 0;
+    p {
+      margin-bottom: $gutterXL;
+      font-size: $textL;
     }
   }
 }

@@ -4,8 +4,8 @@
   header {
     
     .container {
-      padding-top: $gutterL;
-      padding-bottom: $gutterL;
+      padding-top: $gutter;
+      padding-bottom: $gutter;
       border-bottom: 0.1rem solid $gray;
 
       a {
@@ -17,7 +17,7 @@
 
       .links {
         & > *:not(:last-child) {
-          margin-right: $gutterL;
+          margin-right: $gutter;
         }
       }
     }

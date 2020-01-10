@@ -1,62 +1,63 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { INFORMATION } from './INFORMATION';
-import { RouterOutlet } from '@angular/router';
-import { trigger, transition, query, style, animate } from '@angular/animations';
+import { Router, NavigationEnd } from '@angular/router';
+import { trigger, transition, query, style, animate, animateChild, group } from '@angular/animations';
 import { InsightsService } from './@core/services';
-
-export const fader =
-  trigger('routeAnimations', [
-    transition('* <=> *', [
-      query(
-        ':enter',
-        [
-          style({ display: 'block', opacity: 0 }),
-          animate('0.4s ease', style({ opacity: 1 }))
-        ],
-        { optional: true }
-      ),
-    ]),
-]);
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   animations: [
-    fader
+    trigger('routeAnimations', [
+      transition('* <=> *', [
+        group([
+          query(
+            ':enter',
+            [
+              style({ display: 'block', opacity: 0 }),
+              animate('0.5s ease', style({ opacity: 1 })),
+            ],
+            { optional: true }
+          ),
+          query('@titleAnimations', animateChild(), { optional: true })
+        ]),
+      ]),
+    ]),
   ]
 })
 export class AppComponent implements OnInit {
 
-  private landingRoutePath: string;
+  @HostBinding('@.disabled')
+  private areAnimationDisabled = true;
 
-  private animationAreEnabled = false;
+  private nbNavigation = 0;
+
+  url: string;
 
   constructor(
     private insightsService: InsightsService,
     private titleService: Title,
+    private router: Router,
   ) { }
 
   ngOnInit() {
     this.insightsService.init();
     this.titleService.setTitle('Portfolio / ' + INFORMATION.name);
-  }
 
-  /**
-   * Animation is disabled on landing page to avoid flickering effect due to SSR
-   */
-  prepareRoute(outlet: RouterOutlet) {
-    // Return if RouterOutlet isn't ready
-    if (!outlet.isActivated) return false;
+    this.router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe(() => {
+      // Keeping url up to date to trigger routeAnimations
+      this.url = this.router.url;
 
-    // Set landing route path
-    if (this.landingRoutePath === undefined) this.landingRoutePath = outlet.activatedRoute.routeConfig.path;
+      // Disabling animations on landing page to avoid flickering effect due to SSR
+      if (this.nbNavigation < 2) {
+        this.nbNavigation++;
 
-    // If landing route path != current route path => we have left the landing page and we can enable animations
-    if (this.landingRoutePath !== outlet.activatedRoute.routeConfig.path) this.animationAreEnabled = true;
-
-    return this.animationAreEnabled && outlet.activatedRoute;
+        if (this.nbNavigation === 2) this.areAnimationDisabled = false;
+      }
+    });
   }
 
 }

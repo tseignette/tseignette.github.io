@@ -28,13 +28,13 @@ $size: 4.0rem;
       @include button-active-focus();
 
       height: $size;
-      padding: 0 $gutterL;
+      padding: 0 $gutter;
       border: 0.2rem solid $primaryColor;
       border-radius: $radius;
       user-select: none;
 
       i {
-        margin-right: $gutterS;
+        margin-right: $gutterXS;
       }
 
       &:hover {
@@ -76,7 +76,7 @@ $size: 4.0rem;
       color: $primaryColor;
 
       i {
-        margin-left: $gutterS;
+        margin-left: $gutterXS;
       }
 
       &:hover {

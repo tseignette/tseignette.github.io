@@ -7,9 +7,9 @@ import { Component, Input } from '@angular/core';
 })
 export class LayoutSvgBackgroundComponent {
 
-  @Input() myTitle: string;
-
   @Input() svg: string;
+
+  @Input() text: string;
 
   constructor() { }
 

@@ -1,0 +1,35 @@
+@import 'variables';
+
+:host {
+  display: block;
+  margin: $gutterXXXL 0;
+
+  section {
+    margin-bottom: $gutterXXL;
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      text-transform: capitalize;
+
+      &::before, &::after {
+        content: '';
+        width: 20%;
+        height: 0.5rem;
+        max-width: 10.0rem;
+        border-radius: $radius;
+        background-color: $primaryColorS;
+      }
+
+      &::before {
+        margin-bottom: $gutterXXS;
+      }
+
+      &::after {
+        align-self: flex-end;
+        margin-top: $gutterXXS;
+      }
+    }
+  }
+}

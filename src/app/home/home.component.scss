@@ -12,7 +12,6 @@
     margin: #{-$sectionGutter / 2} 0; // Reduce default gutter as SVG acts as one
     fill: $grayS;
     fill-opacity: 1;
-    background-color: $primaryColor;
   }
 
   section {
@@ -28,19 +27,11 @@
         text-align: center;
       }
 
-      h1 {
-        font-size: $titleXL;
-      }
-
-      h2 {
-        font-size: $titleL;
-      }
-
       p {
         font-size: $textXL;
 
         &:not(:last-child) {
-          margin-bottom: $gutterL;
+          margin-bottom: $gutter;
         }
       }
 
