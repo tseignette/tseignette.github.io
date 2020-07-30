@@ -12,7 +12,13 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      
+
+      .one-percent-for-the-planet {
+        margin-top: $gutterXXL;
+        height: 6.0rem;
+        width: auto;
+      }
+
       .contact {
         margin: $gutterXXL 0;
       }
