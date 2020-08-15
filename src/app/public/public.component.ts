@@ -7,12 +7,8 @@ import { Component, Inject, LOCALE_ID } from '@angular/core';
 })
 export class PublicComponent {
 
-  isEnglish: boolean;
-
   constructor(
-    @Inject(LOCALE_ID) private locale: string
-  ) {
-    this.isEnglish = this.locale.startsWith('en');
-  }
+    @Inject(LOCALE_ID) public locale: string
+  ) { }
 
 }

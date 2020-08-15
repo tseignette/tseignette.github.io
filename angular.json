@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-boilerplate": {
+    "portfolio": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -15,18 +15,21 @@
       "prefix": "app",
       "i18n": {
         "sourceLocale": {
-          "code": "en",
+          "code": "fr",
           "baseHref": ""
         },
         "locales": {
-          "fr": "src/locale/messages.fr.xlf"
+          "en": "src/locale/messages.en.xlf"
         }
       },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-boilerplate/browser",
+            "localize": [
+              "fr"
+            ],
+            "outputPath": "dist/portfolio/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -78,9 +81,9 @@
                 }
               ]
             },
-            "fr": {
+            "en": {
               "localize": [
-                "fr"
+                "en"
               ]
             }
           }
@@ -88,21 +91,21 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-boilerplate:build"
+            "browserTarget": "portfolio:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-boilerplate:build:production"
+              "browserTarget": "portfolio:build:production"
             },
-            "fr": {
-              "browserTarget": "angular-boilerplate:build:fr"
+            "en": {
+              "browserTarget": "portfolio:build:en"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-boilerplate:build"
+            "browserTarget": "portfolio:build"
           }
         },
         "lint": {
@@ -120,7 +123,7 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/angular-boilerplate/server",
+            "outputPath": "dist/portfolio/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json"
           },
@@ -142,8 +145,8 @@
         "prerender": {
           "builder": "@nguniversal/builders:prerender",
           "options": {
-            "browserTarget": "angular-boilerplate:build:production",
-            "serverTarget": "angular-boilerplate:server:production",
+            "browserTarget": "portfolio:build:production",
+            "serverTarget": "portfolio:server:production",
             "routes": []
           },
           "configurations": {
@@ -152,5 +155,5 @@
         }
       }
     }},
-  "defaultProject": "angular-boilerplate"
+  "defaultProject": "portfolio"
 }

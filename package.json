@@ -1,15 +1,11 @@
 {
-  "name": "angular-boilerplate",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "Angular 10 boilerplate with Spectre.css, i18n, static prerendering and some common resources.",
+  "description": "My portfolio available on tseignette.github.io.",
   "keywords": [
-    "angular",
-    "boilerplate",
-    "i18n",
-    "prerendering",
-    "scss"
+    "portfolio"
   ],
-  "repository": "https://github.com/tseignette/angular-boilerplate",
+  "repository": "https://github.com/tseignette/portfolio",
   "license": "CC0-1.0",
   "author": {
     "name": "tseignette"
@@ -17,11 +13,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --host=0.0.0.0",
-    "start:fr": "ng serve --host=0.0.0.0 --configuration=fr",
+    "start:en": "ng serve --host=0.0.0.0 --configuration=en",
     "lint": "ng lint",
     "extract": "ng xi18n --output-path=src/locale",
     "build": "ng build --prod",
-    "prerender": "ng run angular-boilerplate:prerender"
+    "prerender": "ng run portfolio:prerender"
   },
   "dependencies": {
     "@angular/animations": "~10.0.5",

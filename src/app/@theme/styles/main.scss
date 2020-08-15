@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "variables";
+
+::selection {
+  color: $light-color;
+  background-color: $primary-color;
+}
