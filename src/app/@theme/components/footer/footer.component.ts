@@ -1,4 +1,4 @@
-import { Component, HostBinding, Inject, LOCALE_ID } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
 import { INFORMATION } from '../../../@core/INFORMATION.constants';
 import { PAGES } from 'src/app/@core/PAGES.constants';
 
@@ -12,14 +12,12 @@ export class FooterComponent {
   @HostBinding('class')
   readonly hostClass = 'bg-dark';
 
-  readonly INFORMATION = INFORMATION;
-
   readonly PAGES = PAGES;
+
+  readonly name = INFORMATION.name;
 
   readonly now = new Date().getFullYear();
 
-  constructor(
-    @Inject(LOCALE_ID) public locale: string
-  ) { }
+  constructor() { }
 
 }

@@ -16,8 +16,14 @@ export class HeaderComponent {
 
   readonly name = INFORMATION.name;
 
+  isModalActive = false;
+
   constructor(
     @Inject(LOCALE_ID) public currentLocale: string
   ) { }
+
+  toggleModal(): void {
+    this.isModalActive = !this.isModalActive;
+  }
 
 }

@@ -1,0 +1,15 @@
+@import "variables";
+
+:host {
+  &.dark {
+    a:not(.btn) {
+      color: $dark-color;
+    }
+  }
+
+  &.light {
+    a:not(.btn) {
+      color: $light-color;
+    }
+  }
+}

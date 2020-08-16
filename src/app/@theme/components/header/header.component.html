@@ -55,5 +55,23 @@
 </header>
 
 <ng-template #contactMe let-class="class">
-  <button i18n class="btn btn-transparent" type="button" [ngClass]="class">Me contacter</button>
+  <button i18n class="btn btn-transparent" type="button" [ngClass]="class" (click)="toggleModal()">Me contacter</button>
 </ng-template>
+
+<div class="modal modal-sm" [ngClass]="{ active: isModalActive }">
+  <a class="modal-overlay" aria-label="Close" (click)="toggleModal()"></a>
+
+  <div class="modal-container">
+    <div class="modal-header">
+      <a class="btn btn-clear float-right" aria-label="Close" (click)="toggleModal()"></a>
+
+      <div i18n class="modal-title h5">Me contacter</div>
+    </div>
+
+    <div class="modal-body">
+      <div class="content">
+        <app-contact></app-contact>
+      </div>
+    </div>
+  </div>
+</div>

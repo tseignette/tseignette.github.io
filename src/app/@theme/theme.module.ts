@@ -2,7 +2,7 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AutofocusDirective, GridDirective } from './directives';
 import { ConcatPipe, ForObjectPipe, JoinPipe, LastElementPipe, SplitPipe, ToFixedPipe } from './pipes';
-import { HeaderComponent, FooterComponent } from './components';
+import { HeaderComponent, FooterComponent, ContactComponent } from './components';
 import { RouterModule } from '@angular/router';
 
 const COMPONENTS_PRIVATE = [
@@ -10,6 +10,7 @@ const COMPONENTS_PRIVATE = [
 ];
 
 const COMPONENTS_PUBLIC = [
+  ContactComponent,
   HeaderComponent,
   FooterComponent
 ];
