@@ -1,22 +1,27 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AutofocusDirective } from './directives';
+import { AutofocusDirective, GridDirective } from './directives';
 import { ConcatPipe, ForObjectPipe, JoinPipe, LastElementPipe, SplitPipe, ToFixedPipe } from './pipes';
+import { HeaderComponent, FooterComponent } from './components';
+import { RouterModule } from '@angular/router';
 
 const COMPONENTS_PRIVATE = [
   // Add components you do not want to export
 ];
 
 const COMPONENTS_PUBLIC = [
-  // Add components you want to export
+  HeaderComponent,
+  FooterComponent
 ];
 
 const DIRECTIVES = [
-  AutofocusDirective
+  AutofocusDirective,
+  GridDirective
 ];
 
 const IMPORTS = [
-  CommonModule
+  CommonModule,
+  RouterModule
 ];
 
 const PIPES = [

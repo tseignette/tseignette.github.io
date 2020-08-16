@@ -2,3 +2,19 @@
 
 // Importing full Spectre.css source code
 @import "node_modules/spectre.css/src/spectre";
+
+.navbar-brand {
+  font-weight: 500;
+}
+
+.btn.btn-malt {
+  @include button-variant(#F53364);
+}
+
+.btn.btn-transparent:not(:hover) {
+  background: transparent !important;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}

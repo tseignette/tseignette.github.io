@@ -6,3 +6,9 @@
   color: $light-color;
   background-color: $primary-color;
 }
+
+.text-separator::after {
+  content: '•';
+  margin: 0 $unit-2;
+  color: $gray-color;
+}

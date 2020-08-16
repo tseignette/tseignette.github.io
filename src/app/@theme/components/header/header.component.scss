@@ -1,0 +1,14 @@
+@import "variables";
+
+:host {
+  border-bottom: 0.05rem solid $gray-color;
+
+  header {
+    padding-top: $unit-4;
+    padding-bottom: $unit-4;
+
+    .pages > span:last-child::after {
+      display: none;
+    }
+  }
+}

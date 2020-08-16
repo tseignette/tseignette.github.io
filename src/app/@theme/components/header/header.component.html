@@ -1,0 +1,59 @@
+<header appGrid class="navbar">
+  <section class="navbar-section">
+    <div class="dropdown show-sm">
+      <button type="button" class="dropdown-toggle btn btn-link btn-action text-dark" tabindex="0">
+        <i class="icon icon-apps"></i>
+      </button>
+
+      <ul class="menu">
+        <li class="menu-item pt-2">
+          <ng-container *ngTemplateOutlet="contactMe; context: { class: 'btn-block' }"></ng-container>
+        </li>
+
+        <ng-container *ngFor="let page of PAGES">
+          <li *ngIf="page.displayInHeader" class="menu-item">
+            <a [routerLink]="page.routerLink">{{ page.label }}</a>
+          </li>
+        </ng-container>
+      </ul>
+    </div>
+
+    <p class="pages hide-sm no-wrap mb-0">
+      <ng-container *ngFor="let page of PAGES">
+        <span *ngIf="page.displayInHeader" class="text-separator">
+          <a class="text-dark" [routerLink]="page.routerLink">{{ page.label }}</a>
+        </span>
+      </ng-container>
+    </p>
+  </section>
+
+  <section class="navbar-center">
+    <a class="navbar-brand text-dark" routerLink="/">{{ name }}</a>
+  </section>
+
+  <section class="navbar-section">
+    <ng-container *ngTemplateOutlet="contactMe; context: { class: 'hide-sm mr-1' }"></ng-container>
+
+    <div class="dropdown dropdown-right">
+      <button type="button" class="dropdown-toggle btn btn-link btn-action text-dark" tabindex="0">
+        <i class="icon icon-flag"></i>
+      </button>
+
+      <ul class="menu">
+        <li *ngFor="let locale of locales" class="menu-item">
+          <a [href]="locale === 'fr' ? '' : locale" [ngClass]="{ active: locale === currentLocale }">
+            {
+              locale, select,
+              en {English}
+              fr {Français}
+            }
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</header>
+
+<ng-template #contactMe let-class="class">
+  <button i18n class="btn btn-transparent" type="button" [ngClass]="class">Me contacter</button>
+</ng-template>
