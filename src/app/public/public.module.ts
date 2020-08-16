@@ -4,11 +4,15 @@ import { PublicComponent } from './public.component';
 import { PublicRoutingModule } from './public.routing';
 import { ThemeModule } from '../@theme/theme.module';
 import { ProjectsComponent } from './projects/projects.component';
+import { AboutComponent } from './about/about.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 @NgModule({
   declarations: [
     PublicComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    AboutComponent,
+    PrivacyComponent
   ],
   imports: [
     CommonModule,

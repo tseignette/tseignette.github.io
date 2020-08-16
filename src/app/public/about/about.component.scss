@@ -1,0 +1,16 @@
+@import "variables";
+
+dl {
+  dd {
+    display: flex;
+    align-items: center;
+
+    &:not(.text-muted) i {
+      color: $success-color;
+    }
+
+    i {
+      margin-right: $unit-2;
+    }
+  }
+}

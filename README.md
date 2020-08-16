@@ -12,4 +12,4 @@ My portfolio available on [https://tseignette.github.io]().
 
 ## Analytics and tracking
 Analytics and tracking is done with [Insights](https://getinsights.io/), a privacy-focused analytics
-service. It's open source, it does not use any cookies and it respects the __Do not track__ option.
+service. It does not use any cookies and it respects the __Do not track__ option.

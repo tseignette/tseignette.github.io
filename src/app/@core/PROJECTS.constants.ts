@@ -8,7 +8,7 @@ export const PROJECTS = [
     'https://www.prestasyst.com/',
     ProjectType.Freelance,
     'https://app.prestasyst.com/',
-    [ PT.Angular, PT.HTML, PT.Sass, PT.HapiJs, PT.NodeJs, PT.Mongoose ],
+    [ PT.Angular, PT.TypeScript, PT.HTML, PT.Sass, PT.HapiJs, PT.NodeJs, PT.Mongoose ],
     $localize`Mission à long terme.<br>Développement de la V2 de l'application Web en partant de zéro, gestion du serveur.`
   ),
   new Project(

@@ -8,6 +8,7 @@ export enum ProjectTools {
   NodeJs = 'Node.js',
   PostgreSQL = 'PostgreSQL',
   Sass = 'Sass',
+  TypeScript = 'TypeScript',
   Wordpress = 'Wordpress'
 }
 

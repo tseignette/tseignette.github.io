@@ -11,7 +11,7 @@ export const PAGES = [
   },
   {
     displayInHeader: false,
-    label: $localize`Politique de confidentialité`,
-    routerLink: '/privacy-policy'
+    label: $localize`Confidentialité`,
+    routerLink: '/privacy'
   }
 ];
