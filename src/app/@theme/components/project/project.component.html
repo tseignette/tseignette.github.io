@@ -1,0 +1,38 @@
+<div class="card">
+  <div class="card-image" [ngClass]="displayBody ? 'c-zoom-out' : 'c-zoom-in'" (click)="toggleBody()">
+    <img class="img-fit-cover" [alt]="project.company" [src]="project.preview">
+  </div>
+
+  <div class="card-header">
+    <div class="card-title h5 mb-1">
+      <a class="text-dark text-ellipsis" target="_blank" [href]="project.companyWebsite">{{ project.company }}</a>
+
+      <a class="btn btn-outline-dark btn-action ml-1" target="_blank" [href]="project.link">
+        <i class="icon icon-share"></i>
+      </a>
+    </div>
+
+    <div class="card-subtitle c-hand" (click)="toggleBody()">
+      <p class="mb-0" [ngClass]="{ 'text-ellipsis': !displayBody }">
+        <span class="text-muted">
+          {
+            project.type, select,
+            Freelance {Freelance}
+            Internship {Stage}
+            Volunteering {Volontariat}
+          }
+        </span>
+
+        <ng-container *ngIf="project.tools.length">
+          <span class="text-separator"></span>
+
+          <span class="chip" *ngFor="let tool of project.tools">{{ tool }}</span>
+        </ng-container>
+      </p>
+    </div>
+  </div>
+
+  <div *ngIf="displayBody" class="card-body">
+    <p class="text-justify mb-0" [innerHTML]="project.description"></p>
+  </div>
+</div>

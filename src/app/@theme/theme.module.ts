@@ -2,17 +2,18 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AutofocusDirective, GridDirective } from './directives';
 import { ConcatPipe, ForObjectPipe, JoinPipe, LastElementPipe, SplitPipe, ToFixedPipe } from './pipes';
-import { HeaderComponent, FooterComponent, ContactComponent } from './components';
+import { HeaderComponent, FooterComponent, ContactComponent, ProjectComponent, ProjectsListComponent } from './components';
 import { RouterModule } from '@angular/router';
 
 const COMPONENTS_PRIVATE = [
-  // Add components you do not want to export
+  ProjectComponent
 ];
 
 const COMPONENTS_PUBLIC = [
   ContactComponent,
   HeaderComponent,
-  FooterComponent
+  FooterComponent,
+  ProjectsListComponent
 ];
 
 const DIRECTIVES = [

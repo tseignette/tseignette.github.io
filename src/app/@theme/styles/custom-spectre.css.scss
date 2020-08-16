@@ -7,6 +7,10 @@
   font-weight: 500;
 }
 
+.btn.btn-outline-dark {
+  @include button-outline-variant($dark-color);
+}
+
 .btn.btn-malt {
   @include button-variant(#F53364);
 }

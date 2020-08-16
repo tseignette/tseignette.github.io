@@ -38,5 +38,9 @@
 <section appGrid>
   <h2 i18n>Quelques projets</h2>
 
-  <p class="mb-0">TODO:</p>
+  <app-projects-list [limit]="2"></app-projects-list>
+
+  <div class="text-center mt-2">
+    <a i18n class="btn btn-transparent" routerLink="/projects">Voir plus</a>
+  </div>
 </section>

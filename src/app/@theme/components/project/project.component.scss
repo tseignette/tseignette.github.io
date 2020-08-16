@@ -1,0 +1,25 @@
+.card-image {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    padding-bottom: 60%;
+  }
+
+  img {
+    position: absolute;
+    object-position: top center;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+  }
+}
