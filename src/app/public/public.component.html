@@ -1,1 +1,42 @@
-<p>public works!</p>
+<section appGrid class="text-center">
+  <img class="s-rounded picture" [alt]="INFORMATION.name" [src]="INFORMATION.picture">
+
+  <h1>{{ INFORMATION.job }}</h1>
+
+  <div class="columns">
+    <div class="column col-sm-12 col-md-8 col-6 col-mx-auto">
+      <p i18n class="mb-0">
+        Diplômé comme <mark>ingénieur en informatique</mark> en 2019 et passionné de Web depuis 
+        toujours, je mets aujourd'hui mes compétences à disposition.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="bg-secondary">
+  <div appGrid class="text-justify">
+    <h2 i18n>À propos</h2>
+
+    <p i18n>
+      Je suis spécialisé dans le <em>développement front-end</em> et l'<em>intégration Web</em>. Si besoin, j'ai aussi
+      des compétences en <em>développement back-end</em>.
+    </p>
+    <p i18n>
+      <u>Mes outils préférés :</u>&nbsp;<kbd>Angular</kbd>, <kbd>TypeScript</kbd>, <kbd>HTML</kbd>, <kbd>Sass</kbd>, <kbd>Hapi.js</kbd>, <kbd>Node.js</kbd>, <kbd>Sequelize</kbd>, <kbd>MySQL</kbd>.
+    </p>
+    <p i18n>
+      Les outils que vous utilisez ne font pas partie de cette liste ? Pas de problème ! Si le projet est intéressant, je serai heureux de le découvrir et d'en discuter avec vous.
+    </p>
+    <p i18n class="mb-0">
+      En tant que signataire du <a href="https://manifeste.pour-un-reveil-ecologique.org" target="_blank">manifeste étudiant pour un réveil écologique</a> et membre du
+      <a i18n-href href="https://www.onepercentfortheplanet.fr/" target="_blank">1% for the Planet</a>, je m'engage à travailler sur des projets qui ne vont pas à contresens
+      des enjeux environnementaux et sociaux actuels.
+    </p>
+  </div>
+</section>
+
+<section appGrid>
+  <h2 i18n>Quelques projets</h2>
+
+  <p class="mb-0">TODO:</p>
+</section>

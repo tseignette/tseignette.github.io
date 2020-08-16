@@ -1,0 +1,17 @@
+@import "variables";
+
+section {
+  &:not(:first-child) {
+    padding-top: $unit-16;
+  }
+
+  &:not(:last-child) {
+    padding-bottom: $unit-16;
+  }
+
+  .picture {
+    height: 8.0rem;
+    width: auto;
+    margin-bottom: $unit-5;
+  }
+}

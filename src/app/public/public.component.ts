@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { INFORMATION } from '../@core/INFORMATION.constants';
 
 @Component({
   selector: 'app-public',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./public.component.scss']
 })
 export class PublicComponent {
+
+  readonly INFORMATION = INFORMATION;
 
   constructor() { }
 
