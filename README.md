@@ -1,6 +1,6 @@
 # Portfolio
 
-My portfolio available on [tseignette.github.io]().
+My portfolio available on [https://tseignette.github.io]().
 
 ## Getting started
 - `npm start` to start the project locally on [http://localhost:4200]() (accessible through local network)
