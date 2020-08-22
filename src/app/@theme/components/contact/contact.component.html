@@ -1,13 +1,13 @@
-<a [href]="'mailto:' + INFORMATION.mail">{{ INFORMATION.mail }}</a>
+<a [href]="'mailto:' + INFORMATION.mail" (click)="track('mail')">{{ INFORMATION.mail }}</a>
 
 <p class="no-wrap mb-2">
-  <a target="_blank" [href]="INFORMATION.linkedIn[locale]">LinkedIn</a>
+  <a target="_blank" [href]="INFORMATION.linkedIn[locale]" (click)="track('linkedin')">LinkedIn</a>
   <span class="text-separator"></span>
-  <a target="_blank" [href]="INFORMATION.github">GitHub</a>
+  <a target="_blank" [href]="INFORMATION.github" (click)="track('github')">GitHub</a>
   <span class="text-separator"></span>
-  <a i18n target="_blank" [href]="INFORMATION.resume[locale]">CV</a>
+  <a i18n target="_blank" [href]="INFORMATION.resume[locale]" (click)="track('resume')">CV</a>
 </p>
 
-<a i18n class="btn btn-block btn-malt" target="_blank" [href]="INFORMATION.malt">
+<a i18n class="btn btn-block btn-malt" target="_blank" [href]="INFORMATION.malt" (click)="track('malt')">
   Engagez moi sur Malt !
 </a>

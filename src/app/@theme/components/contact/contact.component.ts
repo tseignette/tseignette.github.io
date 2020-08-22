@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, HostBinding, Inject, LOCALE_ID } from '@angular/core';
 import { INFORMATION } from 'src/app/@core/INFORMATION.constants';
+import { InsightsService } from 'src/app/@core/services';
 
 @Component({
   selector: 'app-contact',
@@ -16,11 +17,16 @@ export class ContactComponent implements OnInit {
   readonly INFORMATION = INFORMATION;
 
   constructor(
+    private insightsService: InsightsService,
     @Inject(LOCALE_ID) public locale: string
   ) { }
 
   ngOnInit(): void {
     this.hostClass = this.light ? 'light' : 'dark';
+  }
+
+  track(option: string) {
+    this.insightsService.trackEvent('contact-click', { option });
   }
 
 }

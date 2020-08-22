@@ -3,6 +3,7 @@ import { Title } from '@angular/platform-browser';
 import { INFORMATION } from './@core/INFORMATION.constants';
 import { trigger, transition, group, query, style, animate } from '@angular/animations';
 import { Router } from '@angular/router';
+import { InsightsService } from './@core/services';
 
 @Component({
   selector: 'app-root',
@@ -28,9 +29,11 @@ import { Router } from '@angular/router';
 export class AppComponent {
 
   constructor(
+    private insightsService: InsightsService,
     public router: Router,
     private titleService: Title
   ) {
+    this.insightsService.init();
     this.titleService.setTitle(`${INFORMATION.name} / ${INFORMATION.job}`);
   }
 

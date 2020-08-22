@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Project } from '../../../@core/models';
+import { InsightsService } from 'src/app/@core/services';
 
 @Component({
   selector: 'app-project',
@@ -12,10 +13,20 @@ export class ProjectComponent {
 
   displayBody = false;
 
-  constructor() { }
+  constructor(
+    private insightsService: InsightsService
+  ) { }
 
   toggleBody(): void {
     this.displayBody = !this.displayBody;
+
+    if (this.displayBody) {
+      this.track('details');
+    }
+  }
+
+  track(option: string) {
+    this.insightsService.trackEvent('project-click', { option, project: this.project.id });
   }
 
 }

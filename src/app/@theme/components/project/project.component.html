@@ -5,9 +5,9 @@
 
   <div class="card-header">
     <div class="card-title h5 mb-1">
-      <a class="text-dark text-ellipsis" target="_blank" [href]="project.companyWebsite">{{ project.company }}</a>
+      <a class="text-dark text-ellipsis" target="_blank" [href]="project.companyWebsite" (click)="track('company-link')">{{ project.company }}</a>
 
-      <a class="btn btn-outline-dark btn-action ml-1" target="_blank" [href]="project.link">
+      <a class="btn btn-outline-dark btn-action ml-1" target="_blank" [href]="project.link" (click)="track('project-link')">
         <i class="icon icon-share"></i>
       </a>
     </div>
