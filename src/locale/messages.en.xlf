@@ -246,7 +246,7 @@
         <target><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> macOS / Linux / Unix shell</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/public/about/about.component.html</context>
-          <context context-type="linenumber">28</context>
+          <context context-type="linenumber">27</context>
         </context-group>
       </trans-unit>
       <trans-unit id="99afe3db107a7b5fb676faa12402b547e1acb43e" datatype="html">
@@ -254,7 +254,7 @@
         <target>Soon:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/public/about/about.component.html</context>
-          <context context-type="linenumber">33</context>
+          <context context-type="linenumber">32</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3e343acf9b99804349b4ff58cbef4d9fec77e0ca" datatype="html">
@@ -262,7 +262,7 @@
         <target>Experience, training</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/public/about/about.component.html</context>
-          <context context-type="linenumber">35</context>
+          <context context-type="linenumber">34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="e9931fdb4ba2010dac65060a25cb0afc7cb667bc" datatype="html">
@@ -270,7 +270,7 @@
         <target>For more details, take a look at my profile on <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>LinkedIn<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> or <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>Malt<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/public/about/about.component.html</context>
-          <context context-type="linenumber">37</context>
+          <context context-type="linenumber">36</context>
         </context-group>
       </trans-unit>
       <trans-unit id="0a2d331749b48b9f4d63c2c14a146c9ddf4452f1" datatype="html">
