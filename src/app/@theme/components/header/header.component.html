@@ -1,9 +1,9 @@
 <header appGrid class="navbar">
   <section class="navbar-section">
     <div class="dropdown show-sm">
-      <button type="button" class="dropdown-toggle btn btn-link btn-action text-dark" tabindex="0">
+      <a class="dropdown-toggle btn btn-link btn-action text-dark" tabindex="0">
         <i class="icon icon-apps"></i>
-      </button>
+      </a>
 
       <ul class="menu">
         <li class="menu-item pt-2">
@@ -35,9 +35,9 @@
     <ng-container *ngTemplateOutlet="contactMe; context: { class: 'hide-sm mr-1' }"></ng-container>
 
     <div class="dropdown dropdown-right">
-      <button type="button" class="dropdown-toggle btn btn-link btn-action text-dark" tabindex="0">
+      <a class="dropdown-toggle btn btn-link btn-action text-dark" tabindex="0">
         <i class="icon icon-flag"></i>
-      </button>
+      </a>
 
       <ul class="menu">
         <li *ngFor="let locale of locales" class="menu-item">
