@@ -25,7 +25,7 @@ export class ProjectComponent {
     }
   }
 
-  track(option: string) {
+  track(option: string): void {
     this.insightsService.trackEvent('project-click', { option, project: this.project.id });
   }
 

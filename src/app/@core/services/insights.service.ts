@@ -12,14 +12,14 @@ export class InsightsService {
     @Inject(PLATFORM_ID) private platformId: string
   ) { }
 
-  init() {
+  init(): void {
     if (!isPlatformServer(this.platformId)) {
       init(environment.insightsID, { ignoreErrors: environment.production });
       trackPages();
     }
   }
 
-  trackEvent(eventName: string, params = { }) {
+  trackEvent(eventName: string, params = { }): void {
     track({
       id: eventName,
       parameters: {

@@ -32,7 +32,7 @@ export class HeaderComponent {
     }
   }
 
-  trackI18n(selectedLocale) {
+  trackI18n(selectedLocale): void {
     this.insightsService.trackEvent('i18n', { selectedLocale });
   }
 

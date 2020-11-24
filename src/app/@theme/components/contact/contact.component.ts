@@ -25,7 +25,7 @@ export class ContactComponent implements OnInit {
     this.hostClass = this.light ? 'light' : 'dark';
   }
 
-  track(option: string) {
+  track(option: string): void {
     this.insightsService.trackEvent('contact-click', { option });
   }
 
