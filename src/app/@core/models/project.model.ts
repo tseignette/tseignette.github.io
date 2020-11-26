@@ -1,4 +1,4 @@
-export enum ProjectTools {
+export enum ProjectTool {
   Angular = 'Angular',
   AngularJS = 'AngularJS',
   Express = 'Express',
@@ -22,15 +22,18 @@ export class Project {
 
   constructor(
     public id: string,
-    public preview: string,
+    public preview: [string, string],
     public company: string,
     public companyWebsite: string,
     public type: ProjectType,
     public link: string,
-    public tools: ProjectTools[],
+    public tools: ProjectTool[],
     public description: string
   ) {
-    this.preview = `assets/projects/${preview}`;
+    this.preview = [
+      `assets/img/webp/projects/${preview[0]}`,
+      `assets/img/original/projects/${preview[1]}`
+    ];
   }
 
 }

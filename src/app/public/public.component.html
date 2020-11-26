@@ -1,5 +1,8 @@
 <section appGrid class="text-center">
-  <img class="s-rounded picture" [alt]="INFORMATION.name" [src]="INFORMATION.picture">
+  <picture>
+    <source type="image/webp" [srcset]="INFORMATION.picture[0]">
+    <img class="s-rounded" [alt]="INFORMATION.name" [src]="INFORMATION.picture[1]">
+  </picture>
 
   <h1>{{ INFORMATION.job }}</h1>
 

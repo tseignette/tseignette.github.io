@@ -5,7 +5,12 @@
   padding-bottom: $unit-4;
 
   .one-percent-for-the-planet {
+    display: block;
     height: 3.0rem;
-    width: auto;
+
+    img {
+      height: 100%;
+      width: auto;
+    }
   }
 }

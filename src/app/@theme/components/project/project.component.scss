@@ -7,11 +7,17 @@
     padding-bottom: 60%;
   }
 
-  img {
+  picture {
     position: absolute;
-    object-position: top center;
+    display: block;
     height: 100%;
     width: 100%;
+
+    img {
+      object-position: top center;
+      height: 100%;
+      width: 100%;
+    }
   }
 }
 

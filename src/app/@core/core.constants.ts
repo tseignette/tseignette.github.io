@@ -1,5 +1,5 @@
 export class CoreConstants {
 
-  static readonly locales = [ 'fr', 'en' ];
+  static readonly locales = ['fr', 'en'];
 
 }

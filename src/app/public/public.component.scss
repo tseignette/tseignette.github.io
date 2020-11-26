@@ -9,9 +9,14 @@ section {
     padding-bottom: $unit-16;
   }
 
-  .picture {
+  picture {
+    display: block;
     height: 8.0rem;
-    width: auto;
     margin-bottom: $unit-5;
+
+    img {
+      height: 100%;
+      width: auto;
+    }
   }
 }

@@ -1,6 +1,9 @@
 <div class="card">
   <div class="card-image" [ngClass]="displayBody ? 'c-zoom-out' : 'c-zoom-in'" (click)="toggleBody()">
-    <img class="img-fit-cover" [alt]="project.company" [src]="project.preview">
+    <picture>
+      <source type="image/webp" [srcset]="project.preview[0]">
+      <img class="img-fit-cover" [alt]="project.company" [src]="project.preview[1]">
+    </picture>
   </div>
 
   <div class="card-header">
