@@ -11,10 +11,7 @@ export const INFORMATION = {
     en: 'https://www.linkedin.com/in/thomas-seignette/?locale=en_US',
     fr: 'https://www.linkedin.com/in/thomas-seignette'
   },
-  resume: {
-    en: 'assets/CV_THOMAS_SEIGNETTE.pdf',
-    fr: 'assets/CV_THOMAS_SEIGNETTE.pdf'
-  },
+  resume: 'assets/CV_THOMAS_SEIGNETTE.pdf',
   favoriteTools: [PT.Angular, PT.TypeScript, PT.Sass, PT.HapiJs, PT.NodeJs, PT.Sequelize, PT.MySQL],
   picture: [
     'assets/img/webp/seignette_thomas.webp',
