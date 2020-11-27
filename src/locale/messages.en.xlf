@@ -2,70 +2,60 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="fr" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="3710870646941050951" datatype="html">
+        <source>Diplômé comme &lt;mark&gt;ingénieur en informatique&lt;/mark&gt; en 2019 et passionné de Web depuis toujours, je mets aujourd&apos;hui mes compétences à disposition.</source>
+        <target>After an &lt;mark&gt;engineering degree in computer science&lt;/mark&gt; in 2019 and passionate about the Web since forever, today I put my skills at your disposal.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/@core/INFORMATION.constants.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="3443034350686975292" datatype="html">
+        <source>Développeur Web</source>
         <target>Web Developer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/@core/INFORMATION.constants.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="7131503233535545455" datatype="html">
+        <source>À propos</source>
         <target>About</target>
-      </trans-unit>
-      <trans-unit id="2823327110111393272" datatype="html">
-        <target>Projects</target>
-      </trans-unit>
-      <trans-unit id="8393472153703114984" datatype="html">
-        <target>Privacy</target>
-      </trans-unit>
-      <trans-unit id="8112827711684437230" datatype="html">
-        <target>Long-term assignment.&lt;br/&gt;Development of the web application V2 from scratch, server management.</target>
-      </trans-unit>
-      <trans-unit id="691772780051319199" datatype="html">
-        <target>6 month internship.&lt;br/&gt;Development of new features, bug fixes.&lt;br/&gt;Integration of a new UI/UX kit and interaction with a design studio.&lt;br/&gt;Management of a team of developers.</target>
-      </trans-unit>
-      <trans-unit id="6990221770565946395" datatype="html">
-        <target>Development of new features.&lt;br/&gt;Development of the API V2 from scratch.&lt;br/&gt;Server management, App Store and Google play applications deployment.</target>
-      </trans-unit>
-      <trans-unit id="3205604189200892538" datatype="html">
-        <target>Creation of the new showcase website.</target>
-      </trans-unit>
-      <trans-unit id="61b6813cc2c1da64f9f54484aac977d39868f55c" datatype="html">
-        <source>CV</source>
-        <target>Resume</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/@theme/components/contact/contact.component.html</context>
+          <context context-type="sourcefile">src/app/@core/PAGES.constants.ts</context>
           <context context-type="linenumber">8</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="17f31c1143828569d71de13e9d0ab12eef382891" datatype="html">
-        <source>
-  Engagez moi sur Malt !
-</source>
-        <target>
-  Hire me on Malt!
-</target>
+      <trans-unit id="7656100826279689618" datatype="html">
+        <source>Mes outils préférés : <x id="PH" equiv-text="INFORMATION.favoriteTools.join(&apos;, &apos;)"/>. Plus de détails sur mon profil LinkedIn ou Malt.</source>
+        <target>My favorite tools: <x id="PH" equiv-text="INFORMATION.favoriteTools.join(&apos;, &apos;)"/>. More details on my LinkedIn or Malt profile.</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/@theme/components/contact/contact.component.html</context>
-          <context context-type="linenumber">11</context>
+          <context context-type="sourcefile">src/app/@core/PAGES.constants.ts</context>
+          <context context-type="linenumber">9</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="71a86ec1de077e4fb62bf4c40d773eaf232904e6" datatype="html">
-        <source>
-            <x id="ICU" equiv-text="{
-              locale, select, en {...} fr {...}}"/>
-          </source>
-        <target>
-            <x id="ICU" equiv-text="{
-              locale, select, en {...} fr {...}}"/>
-          </target>
+      <trans-unit id="2823327110111393272" datatype="html">
+        <source>Projets</source>
+        <target>Projects</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/@theme/components/header/header.component.html</context>
-          <context context-type="linenumber">44</context>
+          <context context-type="sourcefile">src/app/@core/PAGES.constants.ts</context>
+          <context context-type="linenumber">14</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8e3df3d5cc8a7d4e5101b418897c2bbc556adac5" datatype="html">
-        <source>{VAR_SELECT, select, en {English} fr {Français} }</source>
-        <target>{VAR_SELECT, select, en {English} fr {Français} }</target>
+      <trans-unit id="7260428020156215415" datatype="html">
+        <source>J&apos;ai travaillé pour ces entreprises : <x id="PH" equiv-text="PROJECTS.map(project =&gt; project.company).join(&apos;, &apos;)"/>.</source>
+        <target>I worked for theses companies: <x id="PH" equiv-text="PROJECTS.map(project =&gt; project.company).join(&apos;, &apos;)"/>.</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/@theme/components/header/header.component.html</context>
-          <context context-type="linenumber">45</context>
+          <context context-type="sourcefile">src/app/@core/PAGES.constants.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8393472153703114984" datatype="html">
+        <source>Confidentialité</source>
+        <target>Privacy</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/@core/PAGES.constants.ts</context>
+          <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
       <trans-unit id="08f3be9a185322be3bb825c6e3554d20ca10f031" datatype="html">
@@ -73,11 +63,19 @@
         <target>Contact me</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/@theme/components/header/header.component.html</context>
-          <context context-type="linenumber">58</context>
+          <context context-type="linenumber">68</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/@theme/components/header/header.component.html</context>
-          <context context-type="linenumber">68</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8e3df3d5cc8a7d4e5101b418897c2bbc556adac5" datatype="html">
+        <source>{VAR_SELECT, select, en {English} fr {Français}}</source>
+        <target>{VAR_SELECT, select, en {English} fr {Français}}</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/@theme/components/header/header.component.html</context>
+          <context context-type="linenumber">45,49</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8c109a1d72eeab6d3219c9dfb72722fe68d19431" datatype="html">
@@ -105,20 +103,43 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/public/public.component.html</context>
-          <context context-type="linenumber">32</context>
+          <context context-type="linenumber">35</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="24228bd56ac19e6c97434c70412a64008ee787d6" datatype="html">
-        <source>
-        Diplômé comme <x id="START_TAG_MARK" ctype="x-mark" equiv-text="&lt;mark&gt;"/>ingénieur en informatique<x id="CLOSE_TAG_MARK" ctype="x-mark" equiv-text="&lt;/mark&gt;"/> en 2019 et passionné de Web depuis 
-        toujours, je mets aujourd&apos;hui mes compétences à disposition.
-      </source>
-        <target>
-        After an <x id="START_TAG_MARK" ctype="x-mark" equiv-text="&lt;mark&gt;"/>engineering degree in computer science<x id="CLOSE_TAG_MARK" ctype="x-mark" equiv-text="&lt;/mark&gt;"/> in 2019 and passionate about the Web since forever, today I put my skills at your disposal.
-      </target>
+      <trans-unit id="8112827711684437230" datatype="html">
+        <source>Mission à long terme.&lt;br&gt;Développement de la V2 de l&apos;application Web en partant de zéro, gestion du serveur.</source>
+        <target>Long-term assignment.&lt;br/&gt;Development of the web application V2 from scratch, server management.</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/public/public.component.html</context>
-          <context context-type="linenumber">8</context>
+          <context context-type="sourcefile">src/app/@core/PROJECTS.constants.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="691772780051319199" datatype="html">
+        <source>Stage de 6 mois.&lt;br&gt;Développement de nouvelles fonctionnalités, correction de bugs.&lt;br&gt;
+    Intégration d&apos;un nouveau kit UI/UX et interaction avec un studio de design.&lt;br&gt;
+    Gestion d&apos;une équipe de développeurs.</source>
+        <target>6 month internship.&lt;br/&gt;Development of new features, bug fixes.&lt;br/&gt;Integration of a new UI/UX kit and interaction with a design studio.&lt;br/&gt;Management of a team of developers.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/@core/PROJECTS.constants.ts</context>
+          <context context-type="linenumber">22,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6990221770565946395" datatype="html">
+        <source>Développement de nouvelles fonctionnalités.&lt;br&gt;
+    Développement de la V2 de l&apos;API en partant de zéro.&lt;br&gt;
+    Gestion du serveur, déploiement des applications sur l&apos;App Store et Google Play.</source>
+        <target>Development of new features.&lt;br/&gt;Development of the API V2 from scratch.&lt;br/&gt;Server management, App Store and Google play applications deployment.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/@core/PROJECTS.constants.ts</context>
+          <context context-type="linenumber">34,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3205604189200892538" datatype="html">
+        <source>Création du nouveau site vitrine.</source>
+        <target>Creation of the new showcase website.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/@core/PROJECTS.constants.ts</context>
+          <context context-type="linenumber">46</context>
         </context-group>
       </trans-unit>
       <trans-unit id="90861e5aeffed8c9d750f92764754602259407cf" datatype="html">
@@ -134,55 +155,34 @@
         </context-group>
       </trans-unit>
       <trans-unit id="c8780cf6e0c6a9e10f99b3ac7516b845054ff43f" datatype="html">
-        <source>
-      Je suis spécialisé dans le <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>développement front-end<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/> et l&apos;<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>intégration Web<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>. Si besoin, j&apos;ai aussi
-      des compétences en <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>développement back-end<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>.
-    </source>
+        <source> Je suis spécialisé dans le <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>développement front-end<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/> et l&apos;<x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>intégration Web<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>. Si besoin, j&apos;ai aussi des compétences en <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>développement back-end<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>. </source>
         <target>
         I specialize in <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>front-end development<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/> and <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>web integration<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/>. If necessary, I also have <x id="START_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;em&gt;"/>back-end development<x id="CLOSE_EMPHASISED_TEXT" ctype="x-em" equiv-text="&lt;/em&gt;"/> skills.
     </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/public/public.component.html</context>
-          <context context-type="linenumber">20</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="f6f3bdfb4a473c6a8fae1909f21ee9b1f016e6c0" datatype="html">
-        <source>
-      <x id="START_UNDERLINED_TEXT" ctype="x-u" equiv-text="&lt;u&gt;"/>Mes outils préférés :<x id="CLOSE_UNDERLINED_TEXT" ctype="x-u" equiv-text="&lt;/u&gt;"/> <x id="START_TAG_KBD" ctype="x-kbd" equiv-text="&lt;kbd&gt;"/>Angular<x id="CLOSE_TAG_KBD" ctype="x-kbd" equiv-text="&lt;/kbd&gt;"/>, <x id="START_TAG_KBD" ctype="x-kbd" equiv-text="&lt;kbd&gt;"/>TypeScript<x id="CLOSE_TAG_KBD" ctype="x-kbd" equiv-text="&lt;/kbd&gt;"/>, <x id="START_TAG_KBD" ctype="x-kbd" equiv-text="&lt;kbd&gt;"/>HTML<x id="CLOSE_TAG_KBD" ctype="x-kbd" equiv-text="&lt;/kbd&gt;"/>, <x id="START_TAG_KBD" ctype="x-kbd" equiv-text="&lt;kbd&gt;"/>Sass<x id="CLOSE_TAG_KBD" ctype="x-kbd" equiv-text="&lt;/kbd&gt;"/>, <x id="START_TAG_KBD" ctype="x-kbd" equiv-text="&lt;kbd&gt;"/>Hapi.js<x id="CLOSE_TAG_KBD" ctype="x-kbd" equiv-text="&lt;/kbd&gt;"/>, <x id="START_TAG_KBD" ctype="x-kbd" equiv-text="&lt;kbd&gt;"/>Node.js<x id="CLOSE_TAG_KBD" ctype="x-kbd" equiv-text="&lt;/kbd&gt;"/>, <x id="START_TAG_KBD" ctype="x-kbd" equiv-text="&lt;kbd&gt;"/>Sequelize<x id="CLOSE_TAG_KBD" ctype="x-kbd" equiv-text="&lt;/kbd&gt;"/>, <x id="START_TAG_KBD" ctype="x-kbd" equiv-text="&lt;kbd&gt;"/>MySQL<x id="CLOSE_TAG_KBD" ctype="x-kbd" equiv-text="&lt;/kbd&gt;"/>.
-    </source>
-        <target>
-      <x id="START_UNDERLINED_TEXT" ctype="x-u" equiv-text="&lt;u&gt;"/>My favorite tools:<x id="CLOSE_UNDERLINED_TEXT" ctype="x-u" equiv-text="&lt;/u&gt;"/> <x id="START_TAG_KBD" ctype="x-kbd" equiv-text="&lt;kbd&gt;"/>Angular<x id="CLOSE_TAG_KBD" ctype="x-kbd" equiv-text="&lt;/kbd&gt;"/>, <x id="START_TAG_KBD" ctype="x-kbd" equiv-text="&lt;kbd&gt;"/>TypeScript<x id="CLOSE_TAG_KBD" ctype="x-kbd" equiv-text="&lt;/kbd&gt;"/>, <x id="START_TAG_KBD" ctype="x-kbd" equiv-text="&lt;kbd&gt;"/>HTML<x id="CLOSE_TAG_KBD" ctype="x-kbd" equiv-text="&lt;/kbd&gt;"/>, <x id="START_TAG_KBD" ctype="x-kbd" equiv-text="&lt;kbd&gt;"/>Sass<x id="CLOSE_TAG_KBD" ctype="x-kbd" equiv-text="&lt;/kbd&gt;"/>, <x id="START_TAG_KBD" ctype="x-kbd" equiv-text="&lt;kbd&gt;"/>Hapi.js<x id="CLOSE_TAG_KBD" ctype="x-kbd" equiv-text="&lt;/kbd&gt;"/>, <x id="START_TAG_KBD" ctype="x-kbd" equiv-text="&lt;kbd&gt;"/>Node.js<x id="CLOSE_TAG_KBD" ctype="x-kbd" equiv-text="&lt;/kbd&gt;"/>, <x id="START_TAG_KBD" ctype="x-kbd" equiv-text="&lt;kbd&gt;"/>Sequelize<x id="CLOSE_TAG_KBD" ctype="x-kbd" equiv-text="&lt;/kbd&gt;"/>, <x id="START_TAG_KBD" ctype="x-kbd" equiv-text="&lt;kbd&gt;"/>MySQL<x id="CLOSE_TAG_KBD" ctype="x-kbd" equiv-text="&lt;/kbd&gt;"/>.
-    </target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/public/public.component.html</context>
-          <context context-type="linenumber">24</context>
+          <context context-type="linenumber">21,23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="eb5509bdbee1a6b80f30557f2e03064455344e8f" datatype="html">
-        <source>
-      Les outils que vous utilisez ne font pas partie de cette liste ? Pas de problème ! Si le projet est intéressant, je serais heureux de le découvrir et d&apos;en discuter avec vous.
-    </source>
+        <source> Les outils que vous utilisez ne font pas partie de cette liste ? Pas de problème ! Si le projet est intéressant, je serais heureux de le découvrir et d&apos;en discuter avec vous. </source>
         <target>
       The tools you use are not on this list ? No problem! If the project is interesting, I would be happy to find out more about it and discuss it with you.
     </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/public/public.component.html</context>
-          <context context-type="linenumber">27</context>
+          <context context-type="linenumber">31,32</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ff3ed93444916962955e4f80a1eb2642aa21d777" datatype="html">
-        <source>
-      En tant que signataire du <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>manifeste étudiant pour un réveil écologique<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> et membre du
-      <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>1% for the Planet<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>, je m&apos;engage à travailler sur des projets qui ne vont pas à contresens
-      des enjeux environnementaux et sociaux actuels.
-    </source>
+        <source> En tant que signataire du <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://manifeste.pour-un-reveil-ecologique.org&quot; target=&quot;_blank&quot;&gt;"/>manifeste étudiant pour un réveil écologique<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> et membre du <x id="START_LINK_1" equiv-text="&lt;a i18n-href href=&quot;https://www.onepercentfortheplanet.fr/&quot; target=&quot;_blank&quot;&gt;"/>1% for the Planet<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>, je m&apos;engage à travailler sur des projets qui ne vont pas à contresens des enjeux environnementaux et sociaux actuels. </source>
         <target>
       As a signatory of <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Wake up call on the environment, a student Manifesto<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> and a member of
       <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>1% for the Planet<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>, I am committed to working on projects that do not go against today's environmental and social issues.
     </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/public/public.component.html</context>
-          <context context-type="linenumber">30</context>
+          <context context-type="linenumber">34,37</context>
         </context-group>
       </trans-unit>
       <trans-unit id="fee0eed943bcbf7a62e4d665f45d8b885c64943f" datatype="html">
@@ -190,7 +190,7 @@
         <target>Find out more</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/public/public.component.html</context>
-          <context context-type="linenumber">38</context>
+          <context context-type="linenumber">41</context>
         </context-group>
       </trans-unit>
       <trans-unit id="41f8d2c166c63077d9977859bd3986d931ffb521" datatype="html">
@@ -198,7 +198,7 @@
         <target>Some projects</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/public/public.component.html</context>
-          <context context-type="linenumber">43</context>
+          <context context-type="linenumber">46</context>
         </context-group>
       </trans-unit>
       <trans-unit id="f05cda5fdcd3e6bcc1ddec3f588db62823e96504" datatype="html">
@@ -206,7 +206,17 @@
         <target>See more</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/public/public.component.html</context>
-          <context context-type="linenumber">48</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ed8145b3dce32b80d8d1b36132cf74776b3efedf" datatype="html">
+        <source><x id="START_UNDERLINED_TEXT" ctype="x-u" equiv-text="&lt;u class=&quot;mr-1&quot;&gt;"/>Mes outils préférés :<x id="CLOSE_UNDERLINED_TEXT" ctype="x-u" equiv-text="&lt;/u&gt;"/><x id="START_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;ng-container *ngFor=&quot;let tool of INFORMATION.favoriteTools; let last = last&quot;&gt;
+        "/><x id="START_TAG_KBD" ctype="x-kbd" equiv-text="&lt;kbd&gt;"/><x id="INTERPOLATION" equiv-text="{{ tool }}"/><x id="CLOSE_TAG_KBD" ctype="x-kbd" equiv-text="&lt;/kbd&gt;"/><x id="INTERPOLATION_1" equiv-text="{{ last ? &apos;.&apos; : &apos;, &apos; }}"/> <x id="CLOSE_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;/ng-container&gt;"/></source>
+        <target><x id="START_UNDERLINED_TEXT" ctype="x-u" equiv-text="&lt;u class=&quot;mr-1&quot;&gt;"/>My favorite tools:<x id="CLOSE_UNDERLINED_TEXT" ctype="x-u" equiv-text="&lt;/u&gt;"/><x id="START_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;ng-container *ngFor=&quot;let tool of INFORMATION.favoriteTools; let last = last&quot;&gt;
+        "/><x id="START_TAG_KBD" ctype="x-kbd" equiv-text="&lt;kbd&gt;"/><x id="INTERPOLATION" equiv-text="{{ tool }}"/><x id="CLOSE_TAG_KBD" ctype="x-kbd" equiv-text="&lt;/kbd&gt;"/><x id="INTERPOLATION_1" equiv-text="{{ last ? &apos;.&apos; : &apos;, &apos; }}"/> <x id="CLOSE_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;/ng-container&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/public/public.component.html</context>
+          <context context-type="linenumber">25,28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6fa10153ecfdc8fe2a11a7eaeb4ba93ac2d8e038" datatype="html">
@@ -242,7 +252,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="5e2aa19e3cc629b55d557576a9fb1404e3004c0c" datatype="html">
-        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> macOS / Linux / Shell Unix</source>
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;icon icon-check&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt; "/> macOS / Linux / Shell Unix</source>
         <target><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> macOS / Linux / Unix shell</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/public/about/about.component.html</context>
@@ -266,7 +276,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="e9931fdb4ba2010dac65060a25cb0afc7cb667bc" datatype="html">
-        <source>Pour plus de détails, jetez un coup d&apos;œil à mon profil <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>LinkedIn<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> ou <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>Malt<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.</source>
+        <source>Pour plus de détails, jetez un coup d&apos;œil à mon profil <x id="START_LINK" ctype="x-a" equiv-text="&lt;a target=&quot;_blank&quot; [href]=&quot;INFORMATION.linkedIn[locale]&quot;&gt;"/>LinkedIn<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> ou <x id="START_LINK_1" equiv-text="&lt;a target=&quot;_blank&quot; [href]=&quot;INFORMATION.malt&quot;&gt;"/>Malt<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.</source>
         <target>For more details, take a look at my profile on <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>LinkedIn<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> or <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>Malt<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/public/about/about.component.html</context>
@@ -298,7 +308,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="1071557fecd6ee89172b29c3db8bc58d94ca774f" datatype="html">
-        <source>Le site est hébergé à l&apos;aide de <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Github Pages<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. Il se peut que ce service collecte des données :</source>
+        <source>Le site est hébergé à l&apos;aide de <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://pages.github.com/&quot; target=&quot;_blank&quot;&gt;"/>Github Pages<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. Il se peut que ce service collecte des données :</source>
         <target>The website is hosted using <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Github Pages<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. This service may collect some data:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/public/privacy/privacy.component.html</context>
@@ -314,35 +324,39 @@
         </context-group>
       </trans-unit>
       <trans-unit id="3cafd716c1ddbe62a97377d4ca7d9cdf566b0df5" datatype="html">
-        <source>Le site utilise <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Insights<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> afin de collecter des statistiques relatives à l&apos;utilisateur (langue, taille d&apos;écran, navigateur, etc.) et à ses actions (pages vues, durée de la visite, clic sur certains éléments, etc.).<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
-  Insights est un service de statistiques axé sur la confidentialité. Il ne stocke aucune donnée dans le navigateur et respecte le paramètre <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>Do not track<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> du navigateur. <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>Voir les données collectées<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <source>Le site utilise <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://getinsights.io/&quot;&gt;"/>Insights<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> afin de collecter des statistiques relatives à l&apos;utilisateur (langue, taille d&apos;écran, navigateur, etc.) et à ses actions (pages vues, durée de la visite, clic sur certains éléments, etc.).<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;
+  "/> Insights est un service de statistiques axé sur la confidentialité. Il ne stocke aucune donnée dans le navigateur et respecte le paramètre <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>Do not track<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt; "/> du navigateur. <x id="START_LINK_1" equiv-text="&lt;a href=&quot;https://getinsights.io/what-data-we-collect&quot; target=&quot;_blank&quot;&gt;"/>Voir les données collectées<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
         <target>The website uses <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Insights<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> to collect statistics related to the user (language, screen size, browser, etc.) and his actions (pages viewed, duration of visit, click on certain elements, etc.).<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
-  Insights is a privacy-focused analytics service. It does not store any data in the browser and it respects the browser's <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>Do not track<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> setting. <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>See the data collected<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
+        Insights is a privacy-focused analytics service. It does not store any data in the browser and it respects the browser's <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>Do not track<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> setting. <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>See the data collected<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/public/privacy/privacy.component.html</context>
-          <context context-type="linenumber">17</context>
+          <context context-type="linenumber">17,18</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="a7448d0890e9e86bd22983b666f3a7fa9b8eb5ca" datatype="html">
-        <source>
-          <x id="ICU" equiv-text="{
-            project.type, select, Freelance {...} Internship {...} Volunteering {...}}"/>
-        </source>
-        <target>
-          <x id="ICU" equiv-text="{
-            project.type, select, Freelance {...} Internship {...} Volunteering {...}}"/>
-        </target>
+      <trans-unit id="61b6813cc2c1da64f9f54484aac977d39868f55c" datatype="html">
+        <source>CV</source>
+        <target>Resume</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/@theme/components/project/project.component.html</context>
-          <context context-type="linenumber">17</context>
+          <context context-type="sourcefile">src/app/@theme/components/contact/contact.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="17f31c1143828569d71de13e9d0ab12eef382891" datatype="html">
+        <source> Engagez moi sur Malt !
+</source>
+        <target> Hire me on Malt!
+</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/@theme/components/contact/contact.component.html</context>
+          <context context-type="linenumber">12,13</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ff21144ba963b638a3333ae6aeb225e4c45f2592" datatype="html">
-        <source>{VAR_SELECT, select, Freelance {Freelance} Internship {Stage} Volunteering {Volontariat} }</source>
+        <source>{VAR_SELECT, select, Freelance {Freelance} Internship {Stage} Volunteering {Volontariat}}</source>
         <target>{VAR_SELECT, select, Freelance {Freelance} Internship {Internship} Volunteering {Volunteering} }</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/@theme/components/project/project.component.html</context>
-          <context context-type="linenumber">18</context>
+          <context context-type="linenumber">21,26</context>
         </context-group>
       </trans-unit>
     </body>
