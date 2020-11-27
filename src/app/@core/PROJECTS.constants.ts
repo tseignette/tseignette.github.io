@@ -8,8 +8,11 @@ export const PROJECTS = [
     'https://www.prestasyst.com/',
     ProjectType.Freelance,
     'https://app.prestasyst.com/',
-    [PT.Angular, PT.TypeScript, PT.HTML, PT.Sass, PT.HapiJs, PT.NodeJs, PT.Mongoose],
-    $localize`Mission à long terme.<br>Développement de la V2 de l'application Web en partant de zéro, gestion du serveur.`
+    [PT.Angular, PT.TypeScript, PT.Sass, PT.HapiJs, PT.NodeJs, PT.Mongoose, PT.GitLabCICD],
+    $localize`Mission à long terme.<br>
+    Développement de la V2 de l'application Web.<br>
+    Intégration de plusieurs API : Mangopay, Payline, Cronofy, Deezer, Spotify.<br>
+    Administration du serveur.`
   ),
   new Project(
     'placeloop',
@@ -18,10 +21,10 @@ export const PROJECTS = [
     'https://placeloop.com/',
     ProjectType.Internship,
     'https://ui-components.placeloop.com/',
-    [PT.AngularJS, PT.HTML, PT.Sass],
+    [PT.AngularJS, PT.Sass, PT.Docker, PT.Mixpanel, PT.Inspectlet],
     $localize`Stage de 6 mois.<br>Développement de nouvelles fonctionnalités, correction de bugs.<br>
-    Intégration d'un nouveau kit UI/UX et interaction avec un studio de design.<br>
-    Gestion d'une équipe de développeurs.`
+    Intégration d'un nouveau kit UI/UX en collaboration avec un studio de design.<br>
+    Gestion d'une équipe de développeurs : formation, gestion de projet, revue de code.`
   ),
   new Project(
     'freetaps',
@@ -31,9 +34,8 @@ export const PROJECTS = [
     ProjectType.Volunteering,
     'https://api.freetaps.earth/',
     [PT.Express, PT.NodeJs, PT.PostgreSQL],
-    $localize`Développement de nouvelles fonctionnalités.<br>
-    Développement de la V2 de l'API en partant de zéro.<br>
-    Gestion du serveur, déploiement des applications sur l'App Store et Google Play.`
+    $localize`Développement de la V2 de l'API.<br>
+    Administration du serveur, déploiement des applications sur l'App Store et Google Play.`
   ),
   new Project(
     'atelier-c',

@@ -2,9 +2,9 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="fr" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="3710870646941050951" datatype="html">
-        <source>Diplômé comme &lt;mark&gt;ingénieur en informatique&lt;/mark&gt; en 2019 et passionné de Web depuis toujours, je mets aujourd&apos;hui mes compétences à disposition.</source>
-        <target>After an &lt;mark&gt;engineering degree in computer science&lt;/mark&gt; in 2019 and passionate about the Web since forever, today I put my skills at your disposal.</target>
+      <trans-unit id="8544722768155072339" datatype="html">
+        <source>&lt;mark&gt;Ingénieur en informatique&lt;/mark&gt; spécialisé dans le &lt;i&gt;développement Web&lt;/i&gt;, je mets mes compétences à disposition en &lt;b&gt;freelance&lt;/b&gt; depuis plus d&apos;un an.</source>
+        <target>&lt;mark&gt;IT engineer&lt;/mark&gt; specializing in &lt;i&gt;Web development&lt;/i&gt;, I have been making my skills available as a &lt;b&gt;freelance&lt;/b&gt; for over a year.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/@core/INFORMATION.constants.ts</context>
           <context context-type="linenumber">4</context>
@@ -106,32 +106,40 @@
           <context context-type="linenumber">35</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8112827711684437230" datatype="html">
-        <source>Mission à long terme.&lt;br&gt;Développement de la V2 de l&apos;application Web en partant de zéro, gestion du serveur.</source>
-        <target>Long-term assignment.&lt;br/&gt;Development of the web application V2 from scratch, server management.</target>
+      <trans-unit id="1868628361353444578" datatype="html">
+        <source>Mission à long terme.&lt;br&gt;
+    Développement de la V2 de l&apos;application Web.&lt;br&gt;
+    Intégration de plusieurs API : Mangopay, Payline, Cronofy, Deezer, Spotify.&lt;br&gt;
+    Administration du serveur.</source>
+        <target>Long-term assignment.&lt;br&gt;
+    Development of the Web application V2.&lt;br&gt;
+    Integration of several API: Mangopay, Payline, Cronofy, Deezer, Spotify.&lt;br&gt;
+    Server administration.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/@core/PROJECTS.constants.ts</context>
-          <context context-type="linenumber">12</context>
+          <context context-type="linenumber">12,15</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="691772780051319199" datatype="html">
+      <trans-unit id="4026898976072681412" datatype="html">
         <source>Stage de 6 mois.&lt;br&gt;Développement de nouvelles fonctionnalités, correction de bugs.&lt;br&gt;
-    Intégration d&apos;un nouveau kit UI/UX et interaction avec un studio de design.&lt;br&gt;
-    Gestion d&apos;une équipe de développeurs.</source>
-        <target>6 month internship.&lt;br/&gt;Development of new features, bug fixes.&lt;br/&gt;Integration of a new UI/UX kit and interaction with a design studio.&lt;br/&gt;Management of a team of developers.</target>
+    Intégration d&apos;un nouveau kit UI/UX en collaboration avec un studio de design.&lt;br&gt;
+    Gestion d&apos;une équipe de développeurs : formation, gestion de projet, revue de code.</source>
+        <target>6-month internship.&lt;br&gt;Development of new features, bug fixes.&lt;br&gt;
+    Integration of a new UI/UX kit in collaboration with a design studio.&lt;br&gt;
+    Management of a team of developers: training, project management, code review.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/@core/PROJECTS.constants.ts</context>
-          <context context-type="linenumber">22,24</context>
+          <context context-type="linenumber">25,27</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="6990221770565946395" datatype="html">
-        <source>Développement de nouvelles fonctionnalités.&lt;br&gt;
-    Développement de la V2 de l&apos;API en partant de zéro.&lt;br&gt;
-    Gestion du serveur, déploiement des applications sur l&apos;App Store et Google Play.</source>
-        <target>Development of new features.&lt;br/&gt;Development of the API V2 from scratch.&lt;br/&gt;Server management, App Store and Google play applications deployment.</target>
+      <trans-unit id="6672797511740841469" datatype="html">
+        <source>Développement de la V2 de l&apos;API.&lt;br&gt;
+    Administration du serveur, déploiement des applications sur l&apos;App Store et Google Play.</source>
+        <target>Development of the API V2.&lt;br&gt;
+    Server administration, App Store and Google play applications deployment.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/@core/PROJECTS.constants.ts</context>
-          <context context-type="linenumber">34,36</context>
+          <context context-type="linenumber">37,38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3205604189200892538" datatype="html">
@@ -259,9 +267,17 @@
           <context context-type="linenumber">27</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="99afe3db107a7b5fb676faa12402b547e1acb43e" datatype="html">
-        <source>Bientôt :</source>
-        <target>Soon:</target>
+      <trans-unit id="f997f05cdb5786ae52a684c8901c5172fbc82c12" datatype="html">
+        <source>J&apos;ai déjà utilisé :</source>
+        <target>I have already used:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/public/about/about.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b313551dd52ebf8e227fe0e0682c2575f07bfece" datatype="html">
+        <source>Je compte me former à :</source>
+        <target>I plan to train in:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/public/about/about.component.html</context>
           <context context-type="linenumber">32</context>
@@ -351,8 +367,8 @@
           <context context-type="linenumber">12,13</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="ff21144ba963b638a3333ae6aeb225e4c45f2592" datatype="html">
-        <source>{VAR_SELECT, select, Freelance {Freelance} Internship {Stage} Volunteering {Volontariat}}</source>
+      <trans-unit id="c0ff4c13cfebf6ad2138c9016b8ecc3017a4e6ab" datatype="html">
+        <source>{VAR_SELECT, select, Freelance {Freelance} Internship {Stage} Volunteering {Bénévolat}}</source>
         <target>{VAR_SELECT, select, Freelance {Freelance} Internship {Internship} Volunteering {Volunteering} }</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/@theme/components/project/project.component.html</context>

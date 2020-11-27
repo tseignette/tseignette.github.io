@@ -1,9 +1,12 @@
 export enum ProjectTool {
   Angular = 'Angular',
   AngularJS = 'AngularJS',
+  Docker = 'Docker',
   Express = 'Express',
+  GitLabCICD = 'GitLab CI/CD',
   HapiJs = 'Hapi.js',
-  HTML = 'HTML',
+  Inspectlet = 'Inspectlet',
+  Mixpanel = 'Mixpanel',
   Mongoose = 'Mongoose',
   MySQL = 'MySQL',
   NodeJs = 'Node.js',

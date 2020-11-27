@@ -22,7 +22,7 @@
             project.type, select,
             Freelance {Freelance}
             Internship {Stage}
-            Volunteering {Volontariat}
+            Volunteering {Bénévolat}
           }
         </span>
 
@@ -36,6 +36,6 @@
   </div>
 
   <div *ngIf="displayBody" class="card-body">
-    <p class="text-justify mb-0" [innerHTML]="project.description"></p>
+    <p class="text-small text-justify mb-0" [innerHTML]="project.description"></p>
   </div>
 </div>
