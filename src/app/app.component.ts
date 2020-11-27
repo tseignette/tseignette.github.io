@@ -76,7 +76,7 @@ export class AppComponent {
       items.unshift(label);
     }
 
-    this.titleService.setTitle(items.join(' • '));
+    this.titleService.setTitle(items.join(' | '));
   }
 
 }
