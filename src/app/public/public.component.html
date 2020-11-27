@@ -8,10 +8,7 @@
 
   <div class="columns">
     <div class="column col-sm-12 col-md-8 col-6 col-mx-auto">
-      <p i18n class="mb-0">
-        Diplômé comme <mark>ingénieur en informatique</mark> en 2019 et passionné de Web depuis 
-        toujours, je mets aujourd'hui mes compétences à disposition.
-      </p>
+      <p class="mb-0" [innerHTML]="INFORMATION.description"></p>
     </div>
   </div>
 </section>
@@ -25,7 +22,10 @@
       des compétences en <em>développement back-end</em>.
     </p>
     <p i18n>
-      <u>Mes outils préférés :</u>&nbsp;<kbd>Angular</kbd>, <kbd>TypeScript</kbd>, <kbd>HTML</kbd>, <kbd>Sass</kbd>, <kbd>Hapi.js</kbd>, <kbd>Node.js</kbd>, <kbd>Sequelize</kbd>, <kbd>MySQL</kbd>.
+      <u class="mr-1">Mes outils préférés :</u>
+      <ng-container *ngFor="let tool of INFORMATION.favoriteTools; let last = last">
+        <kbd>{{ tool }}</kbd>{{ last ? '.' : ', ' }}
+      </ng-container>
     </p>
     <p i18n>
       Les outils que vous utilisez ne font pas partie de cette liste ? Pas de problème ! Si le projet est intéressant, je serais heureux de le découvrir et d'en discuter avec vous.

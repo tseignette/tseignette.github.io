@@ -1,8 +1,11 @@
+import { animate, group, query, style, transition, trigger } from '@angular/animations';
 import { Component } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
+import { NavigationEnd, Router } from '@angular/router';
+import { filter } from 'rxjs/operators';
+import { CoreUtils } from './@core/core.utils';
 import { INFORMATION } from './@core/INFORMATION.constants';
-import { trigger, transition, group, query, style, animate } from '@angular/animations';
-import { Router } from '@angular/router';
+import { PAGES } from './@core/PAGES.constants';
 import { InsightsService } from './@core/services';
 
 @Component({
@@ -30,11 +33,50 @@ export class AppComponent {
 
   constructor(
     private insightsService: InsightsService,
+    private metaService: Meta,
     public router: Router,
     private titleService: Title
   ) {
     this.insightsService.init();
-    this.titleService.setTitle(`${INFORMATION.name} / ${INFORMATION.job}`);
+
+    router.events
+      .pipe(
+        filter(event => event instanceof NavigationEnd)
+      )
+      .subscribe((event: NavigationEnd) => {
+        const item = PAGES.find(page => page.routerLink === event.url);
+
+        if (item) {
+          this.updateDescription(item.description);
+          this.updateTitle(item.label);
+        }
+        else {
+          this.updateDescription();
+          this.updateTitle();
+        }
+      });
+  }
+
+  private updateDescription(description?: null | string): void {
+    if (description === null) {
+      this.metaService.removeTag('name=description');
+    }
+    else {
+      this.metaService.updateTag({
+        content: description || CoreUtils.stripHTMLTags(INFORMATION.description),
+        name: 'description'
+      });
+    }
+  }
+
+  private updateTitle(label?: string): void {
+    const items = [`${INFORMATION.name} / ${INFORMATION.job}`];
+
+    if (label) {
+      items.unshift(label);
+    }
+
+    this.titleService.setTitle(items.join(' • '));
   }
 
 }

@@ -5,9 +5,11 @@ export enum ProjectTool {
   HapiJs = 'Hapi.js',
   HTML = 'HTML',
   Mongoose = 'Mongoose',
+  MySQL = 'MySQL',
   NodeJs = 'Node.js',
   PostgreSQL = 'PostgreSQL',
   Sass = 'Sass',
+  Sequelize = 'Sequelize',
   TypeScript = 'TypeScript',
   Wordpress = 'Wordpress'
 }
