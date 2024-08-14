@@ -1,0 +1,77 @@
+a[href^="mailto:"]::before {
+  content: "" !important;
+}
+
+#skip-links {
+  position: absolute;
+  top: 0;
+  transform: translateY(-100%);
+
+  &:focus-within {
+    position: relative;
+    transform: translateY(0);
+  }
+}
+
+header, footer {
+  text-align: center;
+}
+
+header img {
+  height: 128px;
+  width: 128px;
+  image-rendering: pixelated;
+  border-radius: 6px;
+}
+
+header h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+header p:first-of-type {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+header p:last-of-type {
+  margin-bottom: 0;
+}
+
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin-top: 0;
+  list-style: none;
+}
+
+header ul li + li::before {
+  content: " • ";
+  white-space: break-spaces;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+details summary span + span::before {
+  content: " • ";
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+details summary span:not(:first-of-type) {
+  opacity: 0.8;
+}
+
+details > *:last-child {
+  margin-bottom: 0;
+}
+
+details > p:first-of-type {
+  margin-bottom: 0;
+}
